@@ -179,7 +179,7 @@ public class ContractorDocuments implements
 
         GetV1ContractorDocumentsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<Document> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -343,7 +343,7 @@ public class ContractorDocuments implements
 
         GetV1ContractorDocumentResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 Document _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -507,7 +507,7 @@ public class ContractorDocuments implements
 
         GetV1ContractorDocumentPdfResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 DocumentPdf _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -692,7 +692,7 @@ public class ContractorDocuments implements
 
         PutV1ContractorDocumentSignResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 DocumentSigned _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

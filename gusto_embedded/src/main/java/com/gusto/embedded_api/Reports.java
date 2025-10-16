@@ -193,7 +193,7 @@ public class Reports implements
 
         PostCompaniesCompanyUuidReportsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 CreateReport _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -371,7 +371,7 @@ public class Reports implements
 
         GetReportsReportUuidResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 Report _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -540,7 +540,7 @@ public class Reports implements
 
         GetCompaniesCompanyUuidReportTemplatesReportTypeResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 ReportTemplate _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

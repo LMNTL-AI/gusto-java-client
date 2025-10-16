@@ -205,7 +205,7 @@ public class ContractorPaymentGroups implements
 
         PostV1CompaniesCompanyIdContractorPaymentGroupsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 ContractorPaymentGroup _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -363,7 +363,7 @@ public class ContractorPaymentGroups implements
 
         GetV1CompaniesCompanyIdContractorPaymentGroupsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<ContractorPaymentGroupMinimal> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -545,7 +545,7 @@ public class ContractorPaymentGroups implements
 
         PostV1CompaniesCompanyIdContractorPaymentGroupsPreviewResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 ContractorPaymentGroup _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -723,7 +723,7 @@ public class ContractorPaymentGroups implements
 
         GetV1ContractorPaymentGroupsContractorPaymentGroupIdResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 ContractorPaymentGroup _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -1066,7 +1066,7 @@ public class ContractorPaymentGroups implements
 
         PutV1ContractorPaymentGroupsContractorPaymentGroupIdFundResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 ContractorPaymentGroup _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

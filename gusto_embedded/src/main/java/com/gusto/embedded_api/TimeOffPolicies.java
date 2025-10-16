@@ -250,7 +250,7 @@ public class TimeOffPolicies implements
 
         PostV1PayrollsPayrollIdCalculateAccruingTimeOffHoursResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 AccruingTimeOffHourObject _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -428,7 +428,7 @@ public class TimeOffPolicies implements
 
         GetTimeOffPoliciesTimeOffPolicyUuidResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 TimeOffPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -610,7 +610,7 @@ public class TimeOffPolicies implements
 
         PutTimeOffPoliciesTimeOffPolicyUuidResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 TimeOffPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -788,7 +788,7 @@ public class TimeOffPolicies implements
 
         GetCompaniesCompanyUuidTimeOffPoliciesResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<TimeOffPolicy> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -1166,7 +1166,7 @@ public class TimeOffPolicies implements
 
         PutVersionTimeOffPoliciesTimeOffPolicyUuidAddEmployeesResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 TimeOffPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -1362,7 +1362,7 @@ public class TimeOffPolicies implements
 
         PutV1TimeOffPoliciesTimeOffPolicyUuidRemoveEmployeesResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 TimeOffPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -1558,7 +1558,7 @@ public class TimeOffPolicies implements
 
         PutVersionTimeOffPoliciesTimeOffPolicyUuidBalanceResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 TimeOffPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -1736,7 +1736,7 @@ public class TimeOffPolicies implements
 
         PutV1TimeOffPoliciesTimeOffPolicyUuidDeactivateResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 TimeOffPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

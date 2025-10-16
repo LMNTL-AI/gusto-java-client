@@ -399,7 +399,7 @@ public class EarningTypes implements
 
         GetV1CompaniesCompanyIdEarningTypesResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 EarningTypeList _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -586,7 +586,7 @@ public class EarningTypes implements
 
         PutV1CompaniesCompanyIdEarningTypesEarningTypeUuidResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 EarningType _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

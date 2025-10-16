@@ -305,7 +305,7 @@ public class TaxRequirements implements
 
         GetV1CompaniesCompanyUuidTaxRequirementsStateResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 TaxRequirementsState _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -492,7 +492,7 @@ public class TaxRequirements implements
 
         PutV1CompaniesCompanyUuidTaxRequirementsStateResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             // no content 
             return _res;
         }
@@ -659,7 +659,7 @@ public class TaxRequirements implements
 
         GetV1CompaniesCompanyUuidTaxRequirementsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<ResponseBody> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

@@ -173,7 +173,7 @@ public class ContractorPaymentMethod implements
 
         GetV1ContractorsContractorUuidBankAccountsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<ContractorBankAccount> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -343,7 +343,7 @@ public class ContractorPaymentMethod implements
 
         GetV1ContractorsContractorUuidPaymentMethodResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 com.gusto.embedded_api.models.components.ContractorPaymentMethod _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -528,7 +528,7 @@ public class ContractorPaymentMethod implements
 
         PutV1ContractorsContractorIdPaymentMethodResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 com.gusto.embedded_api.models.components.ContractorPaymentMethod _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

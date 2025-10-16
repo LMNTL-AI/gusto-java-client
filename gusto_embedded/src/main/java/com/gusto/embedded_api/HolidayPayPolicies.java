@@ -194,7 +194,7 @@ public class HolidayPayPolicies implements
 
         GetCompaniesCompanyUuidHolidayPayPolicyResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 HolidayPayPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -376,7 +376,7 @@ public class HolidayPayPolicies implements
 
         PostCompaniesCompanyUuidHolidayPayPolicyResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 HolidayPayPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -572,7 +572,7 @@ public class HolidayPayPolicies implements
 
         PutCompaniesCompanyUuidHolidayPayPolicyResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 HolidayPayPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -935,7 +935,7 @@ public class HolidayPayPolicies implements
 
         PutCompaniesCompanyUuidHolidayPayPolicyAddResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 HolidayPayPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -1131,7 +1131,7 @@ public class HolidayPayPolicies implements
 
         PutCompaniesCompanyUuidHolidayPayPolicyRemoveResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 HolidayPayPolicy _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -1327,7 +1327,7 @@ public class HolidayPayPolicies implements
 
         GetCompaniesCompanyUuidPaidHolidaysResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 PaidHolidays _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

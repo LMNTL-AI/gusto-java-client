@@ -412,7 +412,7 @@ public class EmployeeBenefits implements
 
         GetV1EmployeesEmployeeIdEmployeeBenefitsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<EmployeeBenefit> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -582,7 +582,7 @@ public class EmployeeBenefits implements
 
         GetV1EmployeeBenefitsEmployeeBenefitIdResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 EmployeeBenefit _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -764,7 +764,7 @@ public class EmployeeBenefits implements
 
         PutV1EmployeeBenefitsEmployeeBenefitIdResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 EmployeeBenefit _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -1112,7 +1112,7 @@ public class EmployeeBenefits implements
 
         GetEmployeeYtdBenefitAmountsFromDifferentCompanyResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<YtdBenefitAmountsFromDifferentCompany> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

@@ -569,7 +569,7 @@ public class EmployeePaymentMethod implements
 
         PutV1EmployeesEmployeeIdBankAccountsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 EmployeeBankAccount _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -753,7 +753,7 @@ public class EmployeePaymentMethod implements
 
         GetV1EmployeesEmployeeIdPaymentMethodResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 com.gusto.embedded_api.models.components.EmployeePaymentMethod _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -938,7 +938,7 @@ public class EmployeePaymentMethod implements
 
         PutV1EmployeesEmployeeIdPaymentMethodResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 com.gusto.embedded_api.models.components.EmployeePaymentMethod _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

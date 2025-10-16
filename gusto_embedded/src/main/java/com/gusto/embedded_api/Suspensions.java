@@ -181,7 +181,7 @@ public class Suspensions implements
 
         GetCompaniesCompanyUuidSuspensionsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<CompanySuspension> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -363,7 +363,7 @@ public class Suspensions implements
 
         PostCompaniesCompanyUuidSuspensionsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 CompanySuspension _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

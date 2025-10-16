@@ -148,7 +148,7 @@ public class Events implements
 
         GetEventsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<Event> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

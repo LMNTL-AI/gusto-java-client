@@ -169,7 +169,7 @@ public class IndustrySelection implements
 
         GetV1CompanyIndustryResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 Industry _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

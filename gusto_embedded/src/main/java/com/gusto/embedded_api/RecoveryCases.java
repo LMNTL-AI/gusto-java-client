@@ -165,7 +165,7 @@ public class RecoveryCases implements
 
         GetRecoveryCasesResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<RecoveryCase> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

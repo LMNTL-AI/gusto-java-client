@@ -199,7 +199,7 @@ public class I9Verification implements
 
         GetV1EmployeesEmployeeIdI9AuthorizationResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 I9Authorization _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -432,7 +432,7 @@ public class I9Verification implements
 
         PutV1EmployeesEmployeeIdI9AuthorizationResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 I9Authorization _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -610,7 +610,7 @@ public class I9Verification implements
 
         GetV1EmployeesEmployeeIdI9AuthorizationDocumentOptionsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<I9AuthorizationDocumentOption> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -774,7 +774,7 @@ public class I9Verification implements
 
         GetV1EmployeesEmployeeIdI9AuthorizationDocumentsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<I9AuthorizationDocument> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -974,7 +974,7 @@ public class I9Verification implements
 
         PutV1EmployeesEmployeeIdI9AuthorizationDocumentsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<I9AuthorizationDocument> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -1331,7 +1331,7 @@ public class I9Verification implements
 
         PutV1EmployeesEmployeeIdI9AuthorizationEmployerSignResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 I9Authorization _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

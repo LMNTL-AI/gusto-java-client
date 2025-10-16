@@ -179,7 +179,7 @@ public class EmployeeTaxSetup implements
 
         GetV1EmployeesEmployeeIdFederalTaxesResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 EmployeeFederalTax _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -361,7 +361,7 @@ public class EmployeeTaxSetup implements
 
         PutV1EmployeesEmployeeIdFederalTaxesResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 EmployeeFederalTax _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -572,7 +572,7 @@ public class EmployeeTaxSetup implements
 
         GetV1EmployeesEmployeeIdStateTaxesResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<EmployeeStateTax> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -760,7 +760,7 @@ public class EmployeeTaxSetup implements
 
         PutV1EmployeesEmployeeIdStateTaxesResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<EmployeeStateTax> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

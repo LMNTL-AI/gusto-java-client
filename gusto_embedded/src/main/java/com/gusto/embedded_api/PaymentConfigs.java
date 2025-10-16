@@ -168,7 +168,7 @@ public class PaymentConfigs implements
 
         GetV1CompanyPaymentConfigsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 com.gusto.embedded_api.models.components.PaymentConfigs _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -350,7 +350,7 @@ public class PaymentConfigs implements
 
         PutV1CompanyPaymentConfigsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 com.gusto.embedded_api.models.components.PaymentConfigs _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

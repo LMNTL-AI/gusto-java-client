@@ -403,7 +403,7 @@ public class BankAccounts implements
 
         GetV1CompaniesCompanyIdBankAccountsResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 List<CompanyBankAccount> _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -629,7 +629,7 @@ public class BankAccounts implements
 
         PutV1CompaniesCompanyIdBankAccountsVerifyResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 CompanyBankAccount _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),

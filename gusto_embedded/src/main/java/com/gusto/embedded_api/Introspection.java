@@ -156,7 +156,7 @@ public class Introspection implements
 
         GetV1TokenInfoResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 GetV1TokenInfoResponseBody _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
@@ -337,7 +337,7 @@ public class Introspection implements
 
         RefreshAccessTokenResponse _res = _resBuilder.build();
         
-        if (Utils.statusCodeMatches(_httpRes.statusCode(), "200")) {
+        if (Utils.statusCodeMatches(_httpRes.statusCode(), "2XX")) {
             if (Utils.contentTypeMatches(_contentType, "application/json")) {
                 Authentication _out = Utils.mapper().readValue(
                     Utils.toUtf8AndClose(_httpRes.body()),
