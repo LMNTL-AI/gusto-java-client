@@ -179,7 +179,7 @@ public class PostV1PartnerManagedCompanies {
 
             PostV1PartnerManagedCompaniesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPartnerManagedCompany(Utils.unmarshal(response, new TypeReference<PartnerManagedCompany>() {}));
                 } else {
@@ -260,7 +260,7 @@ public class PostV1PartnerManagedCompanies {
 
             com.gusto.embedded_api.models.operations.async.PostV1PartnerManagedCompaniesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<PartnerManagedCompany>() {})
                             .thenApply(res::withPartnerManagedCompany);

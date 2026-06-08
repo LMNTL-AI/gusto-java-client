@@ -159,7 +159,7 @@ public class GetV1Employees {
 
             GetV1EmployeesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmployee(Utils.unmarshal(response, new TypeReference<Employee>() {}));
                 } else {
@@ -236,7 +236,7 @@ public class GetV1Employees {
 
             com.gusto.embedded_api.models.operations.async.GetV1EmployeesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Employee>() {})
                             .thenApply(res::withEmployee);

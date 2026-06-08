@@ -160,7 +160,7 @@ public class GetRecoveryCases {
 
             GetRecoveryCasesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withRecoveryCases(Utils.unmarshal(response, new TypeReference<List<RecoveryCase>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetRecoveryCases {
 
             com.gusto.embedded_api.models.operations.async.GetRecoveryCasesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<RecoveryCase>>() {})
                             .thenApply(res::withRecoveryCases);

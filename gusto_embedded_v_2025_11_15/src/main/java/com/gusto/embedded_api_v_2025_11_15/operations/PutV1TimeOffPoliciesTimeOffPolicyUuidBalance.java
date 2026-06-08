@@ -172,7 +172,7 @@ public class PutV1TimeOffPoliciesTimeOffPolicyUuidBalance {
 
             PutV1TimeOffPoliciesTimeOffPolicyUuidBalanceResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withTimeOffPolicy(Utils.unmarshal(response, new TypeReference<TimeOffPolicy>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1TimeOffPoliciesTimeOffPolicyUuidBalance {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1TimeOffPoliciesTimeOffPolicyUuidBalanceResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<TimeOffPolicy>() {})
                             .thenApply(res::withTimeOffPolicy);

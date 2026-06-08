@@ -172,7 +172,7 @@ public class PostPayrollsPayrollUuidReportsGeneralLedger {
 
             PostPayrollsPayrollUuidReportsGeneralLedgerResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withGeneralLedgerReport(Utils.unmarshal(response, new TypeReference<GeneralLedgerReport>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PostPayrollsPayrollUuidReportsGeneralLedger {
 
             com.gusto.embedded_api.models.operations.async.PostPayrollsPayrollUuidReportsGeneralLedgerResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<GeneralLedgerReport>() {})
                             .thenApply(res::withGeneralLedgerReport);

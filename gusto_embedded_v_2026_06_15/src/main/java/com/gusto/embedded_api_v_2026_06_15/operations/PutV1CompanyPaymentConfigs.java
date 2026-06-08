@@ -172,7 +172,7 @@ public class PutV1CompanyPaymentConfigs {
 
             PutV1CompanyPaymentConfigsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPaymentConfigs(Utils.unmarshal(response, new TypeReference<PaymentConfigs>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1CompanyPaymentConfigs {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.PutV1CompanyPaymentConfigsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<PaymentConfigs>() {})
                             .thenApply(res::withPaymentConfigs);

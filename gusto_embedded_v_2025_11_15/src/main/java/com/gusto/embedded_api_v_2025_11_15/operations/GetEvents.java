@@ -168,7 +168,7 @@ public class GetEvents {
 
             GetEventsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEventList(Utils.unmarshal(response, new TypeReference<List<Event>>() {}));
                 } else {
@@ -249,7 +249,7 @@ public class GetEvents {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetEventsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<Event>>() {})
                             .thenApply(res::withEventList);

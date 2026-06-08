@@ -155,7 +155,7 @@ public class GetV1CompaniesCompanyIdUnprocessedTerminationPayPeriods {
 
             GetV1CompaniesCompanyIdUnprocessedTerminationPayPeriodsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withUnprocessedTerminationPayPeriods(Utils.unmarshal(response, new TypeReference<List<UnprocessedTerminationPayPeriod>>() {}));
                 } else {
@@ -232,7 +232,7 @@ public class GetV1CompaniesCompanyIdUnprocessedTerminationPayPeriods {
 
             com.gusto.embedded_api.models.operations.async.GetV1CompaniesCompanyIdUnprocessedTerminationPayPeriodsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<UnprocessedTerminationPayPeriod>>() {})
                             .thenApply(res::withUnprocessedTerminationPayPeriods);

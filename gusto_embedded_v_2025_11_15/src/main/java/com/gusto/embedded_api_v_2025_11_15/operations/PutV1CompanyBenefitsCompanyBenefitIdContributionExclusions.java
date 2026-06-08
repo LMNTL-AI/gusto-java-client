@@ -173,7 +173,7 @@ public class PutV1CompanyBenefitsCompanyBenefitIdContributionExclusions {
 
             PutV1CompanyBenefitsCompanyBenefitIdContributionExclusionsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withContributionExclusions(Utils.unmarshal(response, new TypeReference<List<ContributionExclusion>>() {}));
                 } else {
@@ -257,7 +257,7 @@ public class PutV1CompanyBenefitsCompanyBenefitIdContributionExclusions {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1CompanyBenefitsCompanyBenefitIdContributionExclusionsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<ContributionExclusion>>() {})
                             .thenApply(res::withContributionExclusions);

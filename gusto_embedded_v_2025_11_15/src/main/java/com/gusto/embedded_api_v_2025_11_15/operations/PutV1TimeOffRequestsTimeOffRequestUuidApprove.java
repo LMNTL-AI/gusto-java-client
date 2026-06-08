@@ -168,7 +168,7 @@ public class PutV1TimeOffRequestsTimeOffRequestUuidApprove {
 
             PutV1TimeOffRequestsTimeOffRequestUuidApproveResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmbeddedTimeOffRequest(Utils.unmarshal(response, new TypeReference<EmbeddedTimeOffRequest>() {}));
                 } else {
@@ -252,7 +252,7 @@ public class PutV1TimeOffRequestsTimeOffRequestUuidApprove {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1TimeOffRequestsTimeOffRequestUuidApproveResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<EmbeddedTimeOffRequest>() {})
                             .thenApply(res::withEmbeddedTimeOffRequest);

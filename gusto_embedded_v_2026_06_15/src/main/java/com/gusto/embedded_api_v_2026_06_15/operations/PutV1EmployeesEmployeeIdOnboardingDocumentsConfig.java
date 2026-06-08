@@ -167,7 +167,7 @@ public class PutV1EmployeesEmployeeIdOnboardingDocumentsConfig {
 
             PutV1EmployeesEmployeeIdOnboardingDocumentsConfigResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmployeeOnboardingDocument(Utils.unmarshal(response, new TypeReference<EmployeeOnboardingDocument>() {}));
                 } else {
@@ -244,7 +244,7 @@ public class PutV1EmployeesEmployeeIdOnboardingDocumentsConfig {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.PutV1EmployeesEmployeeIdOnboardingDocumentsConfigResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<EmployeeOnboardingDocument>() {})
                             .thenApply(res::withEmployeeOnboardingDocument);

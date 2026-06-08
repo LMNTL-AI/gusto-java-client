@@ -160,7 +160,7 @@ public class GetV1CompaniesCompanyUuidTimeOffBalances {
 
             GetV1CompaniesCompanyUuidTimeOffBalancesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmbeddedTimeOffBalances(Utils.unmarshal(response, new TypeReference<List<EmbeddedTimeOffBalance>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetV1CompaniesCompanyUuidTimeOffBalances {
 
             com.gusto.embedded_api.models.operations.async.GetV1CompaniesCompanyUuidTimeOffBalancesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<EmbeddedTimeOffBalance>>() {})
                             .thenApply(res::withEmbeddedTimeOffBalances);

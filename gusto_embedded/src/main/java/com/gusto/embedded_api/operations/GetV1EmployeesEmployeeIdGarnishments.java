@@ -160,7 +160,7 @@ public class GetV1EmployeesEmployeeIdGarnishments {
 
             GetV1EmployeesEmployeeIdGarnishmentsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withGarnishments(Utils.unmarshal(response, new TypeReference<List<Garnishment>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetV1EmployeesEmployeeIdGarnishments {
 
             com.gusto.embedded_api.models.operations.async.GetV1EmployeesEmployeeIdGarnishmentsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<Garnishment>>() {})
                             .thenApply(res::withGarnishments);

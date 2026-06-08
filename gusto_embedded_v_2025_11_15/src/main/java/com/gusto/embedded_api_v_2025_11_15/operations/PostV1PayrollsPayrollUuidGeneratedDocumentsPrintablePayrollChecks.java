@@ -172,7 +172,7 @@ public class PostV1PayrollsPayrollUuidGeneratedDocumentsPrintablePayrollChecks {
 
             PostV1PayrollsPayrollUuidGeneratedDocumentsPrintablePayrollChecksResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPayrollCheck(Utils.unmarshal(response, new TypeReference<PayrollCheck>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PostV1PayrollsPayrollUuidGeneratedDocumentsPrintablePayrollChecks {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PostV1PayrollsPayrollUuidGeneratedDocumentsPrintablePayrollChecksResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<PayrollCheck>() {})
                             .thenApply(res::withPayrollCheck);

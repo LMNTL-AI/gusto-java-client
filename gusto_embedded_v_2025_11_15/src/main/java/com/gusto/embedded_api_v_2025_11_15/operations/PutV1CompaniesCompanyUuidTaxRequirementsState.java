@@ -171,7 +171,7 @@ public class PutV1CompaniesCompanyUuidTaxRequirementsState {
 
             PutV1CompaniesCompanyUuidTaxRequirementsStateResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 // no content
                 return res;
             }
@@ -252,7 +252,7 @@ public class PutV1CompaniesCompanyUuidTaxRequirementsState {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1CompaniesCompanyUuidTaxRequirementsStateResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 // no content
                 return CompletableFuture.completedFuture(res);
             }

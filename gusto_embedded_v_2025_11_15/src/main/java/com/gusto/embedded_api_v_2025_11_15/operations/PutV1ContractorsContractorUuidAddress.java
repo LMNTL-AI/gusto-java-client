@@ -172,7 +172,7 @@ public class PutV1ContractorsContractorUuidAddress {
 
             PutV1ContractorsContractorUuidAddressResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withContractorAddress(Utils.unmarshal(response, new TypeReference<ContractorAddress>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1ContractorsContractorUuidAddress {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1ContractorsContractorUuidAddressResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<ContractorAddress>() {})
                             .thenApply(res::withContractorAddress);

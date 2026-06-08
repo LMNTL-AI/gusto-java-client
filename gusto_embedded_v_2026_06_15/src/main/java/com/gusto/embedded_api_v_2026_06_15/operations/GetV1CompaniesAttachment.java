@@ -154,7 +154,7 @@ public class GetV1CompaniesAttachment {
 
             GetV1CompaniesAttachmentResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withCompanyAttachment(Utils.unmarshal(response, new TypeReference<CompanyAttachment>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1CompaniesAttachment {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.GetV1CompaniesAttachmentResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<CompanyAttachment>() {})
                             .thenApply(res::withCompanyAttachment);

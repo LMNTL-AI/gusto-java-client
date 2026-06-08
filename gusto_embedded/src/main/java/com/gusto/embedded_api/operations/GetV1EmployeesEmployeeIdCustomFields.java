@@ -159,7 +159,7 @@ public class GetV1EmployeesEmployeeIdCustomFields {
 
             GetV1EmployeesEmployeeIdCustomFieldsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmployeeCustomFieldList(Utils.unmarshal(response, new TypeReference<EmployeeCustomFieldList>() {}));
                 } else {
@@ -236,7 +236,7 @@ public class GetV1EmployeesEmployeeIdCustomFields {
 
             com.gusto.embedded_api.models.operations.async.GetV1EmployeesEmployeeIdCustomFieldsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<EmployeeCustomFieldList>() {})
                             .thenApply(res::withEmployeeCustomFieldList);

@@ -172,7 +172,7 @@ public class PutV1TerminationsEmployeeId {
 
             PutV1TerminationsEmployeeIdResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withTermination(Utils.unmarshal(response, new TypeReference<Termination>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1TerminationsEmployeeId {
 
             com.gusto.embedded_api.models.operations.async.PutV1TerminationsEmployeeIdResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Termination>() {})
                             .thenApply(res::withTermination);

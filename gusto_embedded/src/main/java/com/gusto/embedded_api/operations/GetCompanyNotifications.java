@@ -159,7 +159,7 @@ public class GetCompanyNotifications {
 
             GetCompanyNotificationsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withNotificationsList(Utils.unmarshal(response, new TypeReference<List<Notification>>() {}));
                 } else {
@@ -229,7 +229,7 @@ public class GetCompanyNotifications {
 
             com.gusto.embedded_api.models.operations.async.GetCompanyNotificationsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<Notification>>() {})
                             .thenApply(res::withNotificationsList);

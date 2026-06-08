@@ -168,7 +168,7 @@ public class GetV1SalaryEstimatesOccupations {
 
             GetV1SalaryEstimatesOccupationsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withBLSOccupations(Utils.unmarshal(response, new TypeReference<List<BLSOccupation>>() {}));
                 } else {
@@ -249,7 +249,7 @@ public class GetV1SalaryEstimatesOccupations {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1SalaryEstimatesOccupationsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<BLSOccupation>>() {})
                             .thenApply(res::withBLSOccupations);

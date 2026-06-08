@@ -172,7 +172,7 @@ public class PutV1TaxLiabilities {
 
             PutV1TaxLiabilitiesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withTaxLiabilitiesSelections(Utils.unmarshal(response, new TypeReference<List<TaxLiabilitiesSelections>>() {}));
                 } else {
@@ -249,7 +249,7 @@ public class PutV1TaxLiabilities {
 
             com.gusto.embedded_api.models.operations.async.PutV1TaxLiabilitiesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<TaxLiabilitiesSelections>>() {})
                             .thenApply(res::withTaxLiabilitiesSelections);

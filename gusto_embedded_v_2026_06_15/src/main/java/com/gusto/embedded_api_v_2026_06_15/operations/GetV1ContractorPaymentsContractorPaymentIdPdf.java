@@ -152,7 +152,7 @@ public class GetV1ContractorPaymentsContractorPaymentIdPdf {
 
             GetV1ContractorPaymentsContractorPaymentIdPdfResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 // no content
                 return res;
             }
@@ -226,7 +226,7 @@ public class GetV1ContractorPaymentsContractorPaymentIdPdf {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.GetV1ContractorPaymentsContractorPaymentIdPdfResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 // no content
                 return CompletableFuture.completedFuture(res);
             }

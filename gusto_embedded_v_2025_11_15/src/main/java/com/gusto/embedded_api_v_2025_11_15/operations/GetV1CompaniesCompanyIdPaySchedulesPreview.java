@@ -160,7 +160,7 @@ public class GetV1CompaniesCompanyIdPaySchedulesPreview {
 
             GetV1CompaniesCompanyIdPaySchedulesPreviewResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPaySchedulePreview(Utils.unmarshal(response, new TypeReference<PaySchedulePreview>() {}));
                 } else {
@@ -244,7 +244,7 @@ public class GetV1CompaniesCompanyIdPaySchedulesPreview {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1CompaniesCompanyIdPaySchedulesPreviewResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<PaySchedulePreview>() {})
                             .thenApply(res::withPaySchedulePreview);

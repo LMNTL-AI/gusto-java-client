@@ -172,7 +172,7 @@ public class PostPartnerManagedCompaniesCompanyUuidAcceptTermsOfService {
 
             PostPartnerManagedCompaniesCompanyUuidAcceptTermsOfServiceResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPartnerManagedCompanyTermsOfServiceResponse(Utils.unmarshal(response, new TypeReference<PartnerManagedCompanyTermsOfServiceResponse>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PostPartnerManagedCompaniesCompanyUuidAcceptTermsOfService {
 
             com.gusto.embedded_api.models.operations.async.PostPartnerManagedCompaniesCompanyUuidAcceptTermsOfServiceResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<PartnerManagedCompanyTermsOfServiceResponse>() {})
                             .thenApply(res::withPartnerManagedCompanyTermsOfServiceResponse);

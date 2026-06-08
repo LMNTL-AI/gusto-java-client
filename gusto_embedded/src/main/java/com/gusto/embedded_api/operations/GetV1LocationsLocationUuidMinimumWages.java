@@ -160,7 +160,7 @@ public class GetV1LocationsLocationUuidMinimumWages {
 
             GetV1LocationsLocationUuidMinimumWagesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withMinimumWageList(Utils.unmarshal(response, new TypeReference<List<MinimumWage>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetV1LocationsLocationUuidMinimumWages {
 
             com.gusto.embedded_api.models.operations.async.GetV1LocationsLocationUuidMinimumWagesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<MinimumWage>>() {})
                             .thenApply(res::withMinimumWageList);

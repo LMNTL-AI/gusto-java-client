@@ -155,7 +155,7 @@ public class GetNotificationsNotificationUuid {
 
             GetNotificationsNotificationUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withNotification(Utils.unmarshal(response, new TypeReference<Notification>() {}));
                 } else {
@@ -239,7 +239,7 @@ public class GetNotificationsNotificationUuid {
 
             com.gusto.embedded_api.models.operations.async.GetNotificationsNotificationUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Notification>() {})
                             .thenApply(res::withNotification);

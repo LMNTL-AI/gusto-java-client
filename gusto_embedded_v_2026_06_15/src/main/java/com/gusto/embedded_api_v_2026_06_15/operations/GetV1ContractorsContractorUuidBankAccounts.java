@@ -155,7 +155,7 @@ public class GetV1ContractorsContractorUuidBankAccounts {
 
             GetV1ContractorsContractorUuidBankAccountsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withContractorBankAccountList(Utils.unmarshal(response, new TypeReference<List<ContractorBankAccount>>() {}));
                 } else {
@@ -232,7 +232,7 @@ public class GetV1ContractorsContractorUuidBankAccounts {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.GetV1ContractorsContractorUuidBankAccountsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<ContractorBankAccount>>() {})
                             .thenApply(res::withContractorBankAccountList);

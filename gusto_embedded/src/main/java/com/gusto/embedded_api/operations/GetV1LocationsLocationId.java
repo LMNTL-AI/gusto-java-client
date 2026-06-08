@@ -154,7 +154,7 @@ public class GetV1LocationsLocationId {
 
             GetV1LocationsLocationIdResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withLocation(Utils.unmarshal(response, new TypeReference<Location>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1LocationsLocationId {
 
             com.gusto.embedded_api.models.operations.async.GetV1LocationsLocationIdResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Location>() {})
                             .thenApply(res::withLocation);

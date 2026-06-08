@@ -172,7 +172,7 @@ public class PutV1CompaniesCompanyUuidHolidayPayPolicyAdd {
 
             PutV1CompaniesCompanyUuidHolidayPayPolicyAddResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withHolidayPayPolicy(Utils.unmarshal(response, new TypeReference<HolidayPayPolicy>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1CompaniesCompanyUuidHolidayPayPolicyAdd {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1CompaniesCompanyUuidHolidayPayPolicyAddResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<HolidayPayPolicy>() {})
                             .thenApply(res::withHolidayPayPolicy);

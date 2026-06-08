@@ -160,7 +160,7 @@ public class GetV1CompaniesCompanyIdContractorsPaymentDetails {
 
             GetV1CompaniesCompanyIdContractorsPaymentDetailsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withContractorPaymentDetailsList(Utils.unmarshal(response, new TypeReference<List<ContractorPaymentDetailsList>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetV1CompaniesCompanyIdContractorsPaymentDetails {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1CompaniesCompanyIdContractorsPaymentDetailsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<ContractorPaymentDetailsList>>() {})
                             .thenApply(res::withContractorPaymentDetailsList);

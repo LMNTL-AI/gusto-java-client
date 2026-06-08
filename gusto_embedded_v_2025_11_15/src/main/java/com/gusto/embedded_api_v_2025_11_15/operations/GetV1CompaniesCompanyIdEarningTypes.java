@@ -154,7 +154,7 @@ public class GetV1CompaniesCompanyIdEarningTypes {
 
             GetV1CompaniesCompanyIdEarningTypesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEarningTypeList(Utils.unmarshal(response, new TypeReference<EarningTypeList>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1CompaniesCompanyIdEarningTypes {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1CompaniesCompanyIdEarningTypesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<EarningTypeList>() {})
                             .thenApply(res::withEarningTypeList);

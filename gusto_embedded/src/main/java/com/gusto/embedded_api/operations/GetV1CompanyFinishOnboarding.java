@@ -155,7 +155,7 @@ public class GetV1CompanyFinishOnboarding {
 
             GetV1CompanyFinishOnboardingResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withCompanyOnboardingStatus(Utils.unmarshal(response, new TypeReference<CompanyOnboardingStatus>() {}));
                 } else {
@@ -239,7 +239,7 @@ public class GetV1CompanyFinishOnboarding {
 
             com.gusto.embedded_api.models.operations.async.GetV1CompanyFinishOnboardingResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<CompanyOnboardingStatus>() {})
                             .thenApply(res::withCompanyOnboardingStatus);

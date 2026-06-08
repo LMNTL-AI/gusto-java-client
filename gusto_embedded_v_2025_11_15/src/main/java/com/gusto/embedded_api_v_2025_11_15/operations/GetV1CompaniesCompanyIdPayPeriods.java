@@ -161,7 +161,7 @@ public class GetV1CompaniesCompanyIdPayPeriods {
 
             GetV1CompaniesCompanyIdPayPeriodsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPayPeriods(Utils.unmarshal(response, new TypeReference<List<PayPeriod>>() {}));
                 } else {
@@ -245,7 +245,7 @@ public class GetV1CompaniesCompanyIdPayPeriods {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1CompaniesCompanyIdPayPeriodsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<PayPeriod>>() {})
                             .thenApply(res::withPayPeriods);

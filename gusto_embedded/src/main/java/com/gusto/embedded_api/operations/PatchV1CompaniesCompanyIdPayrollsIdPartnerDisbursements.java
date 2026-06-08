@@ -168,7 +168,7 @@ public class PatchV1CompaniesCompanyIdPayrollsIdPartnerDisbursements {
 
             PatchV1CompaniesCompanyIdPayrollsIdPartnerDisbursementsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPayrollPartnerDisbursements(Utils.unmarshal(response, new TypeReference<PayrollPartnerDisbursements>() {}));
                 } else {
@@ -252,7 +252,7 @@ public class PatchV1CompaniesCompanyIdPayrollsIdPartnerDisbursements {
 
             com.gusto.embedded_api.models.operations.async.PatchV1CompaniesCompanyIdPayrollsIdPartnerDisbursementsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<PayrollPartnerDisbursements>() {})
                             .thenApply(res::withPayrollPartnerDisbursements);

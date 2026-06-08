@@ -171,7 +171,7 @@ public class PostV1CompaniesCompanyIdPaySchedulesAssign {
 
             PostV1CompaniesCompanyIdPaySchedulesAssignResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 // no content
                 return res;
             }
@@ -252,7 +252,7 @@ public class PostV1CompaniesCompanyIdPaySchedulesAssign {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.PostV1CompaniesCompanyIdPaySchedulesAssignResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 // no content
                 return CompletableFuture.completedFuture(res);
             }

@@ -149,13 +149,13 @@ public class GetV1PayrollsPayrollUuidEmployeesEmployeeUuidPayStub {
                             .contentType(contentType)
                             .statusCode(response.statusCode())
                             .rawResponse(response);
-            if (Utils.statusCodeMatches(response.statusCode(), "200") && Utils.contentTypeMatches(contentType, "application/pdf")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX") && Utils.contentTypeMatches(contentType, "application/pdf")) {
                 resBuilder.responseStream(response.body());
             }
 
             GetV1PayrollsPayrollUuidEmployeesEmployeeUuidPayStubResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/pdf")) {
                     return res;
                 } else {
@@ -229,13 +229,13 @@ public class GetV1PayrollsPayrollUuidEmployeesEmployeeUuidPayStub {
                             .contentType(contentType)
                             .statusCode(response.statusCode())
                             .rawResponse(response);
-            if (Utils.statusCodeMatches(response.statusCode(), "200") && Utils.contentTypeMatches(contentType, "application/pdf")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX") && Utils.contentTypeMatches(contentType, "application/pdf")) {
                 resBuilder.responseStream(response.body());
             }
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1PayrollsPayrollUuidEmployeesEmployeeUuidPayStubResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/pdf")) {
                     return CompletableFuture.completedFuture(res);
                 } else {

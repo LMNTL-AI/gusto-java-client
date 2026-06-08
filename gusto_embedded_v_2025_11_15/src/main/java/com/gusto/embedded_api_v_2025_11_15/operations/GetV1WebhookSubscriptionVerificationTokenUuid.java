@@ -164,7 +164,7 @@ public class GetV1WebhookSubscriptionVerificationTokenUuid {
 
             GetV1WebhookSubscriptionVerificationTokenUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withWebhookVerificationTokenResponse(Utils.unmarshal(response, new TypeReference<WebhookVerificationTokenResponse>() {}));
                 } else {
@@ -245,7 +245,7 @@ public class GetV1WebhookSubscriptionVerificationTokenUuid {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1WebhookSubscriptionVerificationTokenUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<WebhookVerificationTokenResponse>() {})
                             .thenApply(res::withWebhookVerificationTokenResponse);

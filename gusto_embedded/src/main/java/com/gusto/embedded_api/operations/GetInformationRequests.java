@@ -160,7 +160,7 @@ public class GetInformationRequests {
 
             GetInformationRequestsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withInformationRequests(Utils.unmarshal(response, new TypeReference<List<InformationRequest>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetInformationRequests {
 
             com.gusto.embedded_api.models.operations.async.GetInformationRequestsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<InformationRequest>>() {})
                             .thenApply(res::withInformationRequests);

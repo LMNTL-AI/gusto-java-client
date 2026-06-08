@@ -172,7 +172,7 @@ public class PutV1CompaniesCompanyIdFederalTaxDetails {
 
             PutV1CompaniesCompanyIdFederalTaxDetailsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withFederalTaxDetails(Utils.unmarshal(response, new TypeReference<FederalTaxDetails>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1CompaniesCompanyIdFederalTaxDetails {
 
             com.gusto.embedded_api.models.operations.async.PutV1CompaniesCompanyIdFederalTaxDetailsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<FederalTaxDetails>() {})
                             .thenApply(res::withFederalTaxDetails);

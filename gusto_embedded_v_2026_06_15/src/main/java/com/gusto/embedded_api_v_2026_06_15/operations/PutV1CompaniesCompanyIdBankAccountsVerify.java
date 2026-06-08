@@ -172,7 +172,7 @@ public class PutV1CompaniesCompanyIdBankAccountsVerify {
 
             PutV1CompaniesCompanyIdBankAccountsVerifyResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withCompanyBankAccount(Utils.unmarshal(response, new TypeReference<CompanyBankAccount>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1CompaniesCompanyIdBankAccountsVerify {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.PutV1CompaniesCompanyIdBankAccountsVerifyResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<CompanyBankAccount>() {})
                             .thenApply(res::withCompanyBankAccount);

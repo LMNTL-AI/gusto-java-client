@@ -172,7 +172,7 @@ public class PutV1CompaniesCompanyIdEarningTypesEarningTypeUuid {
 
             PutV1CompaniesCompanyIdEarningTypesEarningTypeUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEarningType(Utils.unmarshal(response, new TypeReference<EarningType>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1CompaniesCompanyIdEarningTypesEarningTypeUuid {
 
             com.gusto.embedded_api.models.operations.async.PutV1CompaniesCompanyIdEarningTypesEarningTypeUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<EarningType>() {})
                             .thenApply(res::withEarningType);

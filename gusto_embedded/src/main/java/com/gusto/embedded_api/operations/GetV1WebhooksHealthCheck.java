@@ -161,7 +161,7 @@ public class GetV1WebhooksHealthCheck {
 
             GetV1WebhooksHealthCheckResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withWebhooksHealthCheckStatus(Utils.unmarshal(response, new TypeReference<WebhooksHealthCheckStatus>() {}));
                 } else {
@@ -235,7 +235,7 @@ public class GetV1WebhooksHealthCheck {
 
             com.gusto.embedded_api.models.operations.async.GetV1WebhooksHealthCheckResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<WebhooksHealthCheckStatus>() {})
                             .thenApply(res::withWebhooksHealthCheckStatus);

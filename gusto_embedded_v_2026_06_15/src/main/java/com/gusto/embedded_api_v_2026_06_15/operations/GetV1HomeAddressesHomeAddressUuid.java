@@ -154,7 +154,7 @@ public class GetV1HomeAddressesHomeAddressUuid {
 
             GetV1HomeAddressesHomeAddressUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmployeeAddress(Utils.unmarshal(response, new TypeReference<EmployeeAddress>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1HomeAddressesHomeAddressUuid {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.GetV1HomeAddressesHomeAddressUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<EmployeeAddress>() {})
                             .thenApply(res::withEmployeeAddress);

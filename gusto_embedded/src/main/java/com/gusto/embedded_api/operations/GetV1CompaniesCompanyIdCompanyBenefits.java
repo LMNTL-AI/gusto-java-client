@@ -160,7 +160,7 @@ public class GetV1CompaniesCompanyIdCompanyBenefits {
 
             GetV1CompaniesCompanyIdCompanyBenefitsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withCompanyBenefits(Utils.unmarshal(response, new TypeReference<List<CompanyBenefit>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetV1CompaniesCompanyIdCompanyBenefits {
 
             com.gusto.embedded_api.models.operations.async.GetV1CompaniesCompanyIdCompanyBenefitsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<CompanyBenefit>>() {})
                             .thenApply(res::withCompanyBenefits);

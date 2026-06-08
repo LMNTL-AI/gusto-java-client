@@ -172,7 +172,7 @@ public class PutV1HistoricalEmployees {
 
             PutV1HistoricalEmployeesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmployee(Utils.unmarshal(response, new TypeReference<Employee>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1HistoricalEmployees {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1HistoricalEmployeesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Employee>() {})
                             .thenApply(res::withEmployee);

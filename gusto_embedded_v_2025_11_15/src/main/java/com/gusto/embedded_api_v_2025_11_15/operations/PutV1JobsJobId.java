@@ -172,7 +172,7 @@ public class PutV1JobsJobId {
 
             PutV1JobsJobIdResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withJob(Utils.unmarshal(response, new TypeReference<Job>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1JobsJobId {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1JobsJobIdResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Job>() {})
                             .thenApply(res::withJob);

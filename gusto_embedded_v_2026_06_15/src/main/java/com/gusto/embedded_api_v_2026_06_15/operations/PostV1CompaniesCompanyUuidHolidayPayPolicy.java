@@ -168,7 +168,7 @@ public class PostV1CompaniesCompanyUuidHolidayPayPolicy {
 
             PostV1CompaniesCompanyUuidHolidayPayPolicyResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withHolidayPayPolicy(Utils.unmarshal(response, new TypeReference<HolidayPayPolicy>() {}));
                 } else {
@@ -252,7 +252,7 @@ public class PostV1CompaniesCompanyUuidHolidayPayPolicy {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.PostV1CompaniesCompanyUuidHolidayPayPolicyResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<HolidayPayPolicy>() {})
                             .thenApply(res::withHolidayPayPolicy);

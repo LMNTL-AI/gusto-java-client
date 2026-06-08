@@ -154,7 +154,7 @@ public class GetV1ContractorForm {
 
             GetV1ContractorFormResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withForm1099(Utils.unmarshal(response, new TypeReference<Form1099>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1ContractorForm {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1ContractorFormResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Form1099>() {})
                             .thenApply(res::withForm1099);

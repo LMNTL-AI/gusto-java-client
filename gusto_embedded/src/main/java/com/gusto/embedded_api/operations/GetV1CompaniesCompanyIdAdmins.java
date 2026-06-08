@@ -160,7 +160,7 @@ public class GetV1CompaniesCompanyIdAdmins {
 
             GetV1CompaniesCompanyIdAdminsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withAdmins(Utils.unmarshal(response, new TypeReference<List<Admin>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetV1CompaniesCompanyIdAdmins {
 
             com.gusto.embedded_api.models.operations.async.GetV1CompaniesCompanyIdAdminsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<Admin>>() {})
                             .thenApply(res::withAdmins);

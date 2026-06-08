@@ -173,7 +173,7 @@ public class PutV1EmployeesEmployeeIdStateTaxes {
 
             PutV1EmployeesEmployeeIdStateTaxesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmployeeStateTaxesList(Utils.unmarshal(response, new TypeReference<List<EmployeeStateTaxesList>>() {}));
                 } else {
@@ -257,7 +257,7 @@ public class PutV1EmployeesEmployeeIdStateTaxes {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.PutV1EmployeesEmployeeIdStateTaxesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<EmployeeStateTaxesList>>() {})
                             .thenApply(res::withEmployeeStateTaxesList);

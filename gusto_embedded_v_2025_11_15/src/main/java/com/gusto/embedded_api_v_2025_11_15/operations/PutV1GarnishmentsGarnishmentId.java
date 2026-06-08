@@ -172,7 +172,7 @@ public class PutV1GarnishmentsGarnishmentId {
 
             PutV1GarnishmentsGarnishmentIdResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withGarnishment(Utils.unmarshal(response, new TypeReference<Garnishment>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1GarnishmentsGarnishmentId {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1GarnishmentsGarnishmentIdResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Garnishment>() {})
                             .thenApply(res::withGarnishment);

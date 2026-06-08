@@ -172,7 +172,7 @@ public class PutV1CompanyFormSign {
 
             PutV1CompanyFormSignResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withForm(Utils.unmarshal(response, new TypeReference<Form>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1CompanyFormSign {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1CompanyFormSignResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Form>() {})
                             .thenApply(res::withForm);

@@ -154,7 +154,7 @@ public class GetV1SalaryEstimatesId {
 
             GetV1SalaryEstimatesIdResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withSalaryEstimate(Utils.unmarshal(response, new TypeReference<SalaryEstimate>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1SalaryEstimatesId {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1SalaryEstimatesIdResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<SalaryEstimate>() {})
                             .thenApply(res::withSalaryEstimate);

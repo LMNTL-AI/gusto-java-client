@@ -171,7 +171,7 @@ public class PostV1CompaniesCompanyUuidTimeOffRequestsPreview {
 
             PostV1CompaniesCompanyUuidTimeOffRequestsPreviewResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmbeddedTimeOffRequestPreview(Utils.unmarshal(response, new TypeReference<EmbeddedTimeOffRequestPreview>() {}));
                 } else {
@@ -248,7 +248,7 @@ public class PostV1CompaniesCompanyUuidTimeOffRequestsPreview {
 
             com.gusto.embedded_api.models.operations.async.PostV1CompaniesCompanyUuidTimeOffRequestsPreviewResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<EmbeddedTimeOffRequestPreview>() {})
                             .thenApply(res::withEmbeddedTimeOffRequestPreview);

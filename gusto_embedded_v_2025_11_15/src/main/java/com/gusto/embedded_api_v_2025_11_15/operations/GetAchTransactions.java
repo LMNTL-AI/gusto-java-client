@@ -160,7 +160,7 @@ public class GetAchTransactions {
 
             GetAchTransactionsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withAchTransactionList(Utils.unmarshal(response, new TypeReference<List<AchTransaction>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetAchTransactions {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetAchTransactionsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<AchTransaction>>() {})
                             .thenApply(res::withAchTransactionList);

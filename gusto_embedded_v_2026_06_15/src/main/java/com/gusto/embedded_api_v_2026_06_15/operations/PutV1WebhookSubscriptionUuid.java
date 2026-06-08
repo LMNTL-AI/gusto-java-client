@@ -182,7 +182,7 @@ public class PutV1WebhookSubscriptionUuid {
 
             PutV1WebhookSubscriptionUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withWebhookSubscription(Utils.unmarshal(response, new TypeReference<WebhookSubscription>() {}));
                 } else {
@@ -270,7 +270,7 @@ public class PutV1WebhookSubscriptionUuid {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.PutV1WebhookSubscriptionUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<WebhookSubscription>() {})
                             .thenApply(res::withWebhookSubscription);

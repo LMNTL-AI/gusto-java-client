@@ -154,7 +154,7 @@ public class GetWireInRequestsWireInRequestUuid {
 
             GetWireInRequestsWireInRequestUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withWireInRequest(Utils.unmarshal(response, new TypeReference<WireInRequest>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetWireInRequestsWireInRequestUuid {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.GetWireInRequestsWireInRequestUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<WireInRequest>() {})
                             .thenApply(res::withWireInRequest);

@@ -155,7 +155,7 @@ public class GetV1EmployeesEmployeeIdI9AuthorizationDocumentOptions {
 
             GetV1EmployeesEmployeeIdI9AuthorizationDocumentOptionsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withI9AuthorizationDocumentOptions(Utils.unmarshal(response, new TypeReference<List<I9AuthorizationDocumentOption>>() {}));
                 } else {
@@ -232,7 +232,7 @@ public class GetV1EmployeesEmployeeIdI9AuthorizationDocumentOptions {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1EmployeesEmployeeIdI9AuthorizationDocumentOptionsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<I9AuthorizationDocumentOption>>() {})
                             .thenApply(res::withI9AuthorizationDocumentOptions);

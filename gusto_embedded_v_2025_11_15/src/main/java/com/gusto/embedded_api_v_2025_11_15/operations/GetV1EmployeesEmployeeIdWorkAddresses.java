@@ -155,7 +155,7 @@ public class GetV1EmployeesEmployeeIdWorkAddresses {
 
             GetV1EmployeesEmployeeIdWorkAddressesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmployeeWorkAddressesList(Utils.unmarshal(response, new TypeReference<List<EmployeeWorkAddress>>() {}));
                 } else {
@@ -232,7 +232,7 @@ public class GetV1EmployeesEmployeeIdWorkAddresses {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1EmployeesEmployeeIdWorkAddressesResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<EmployeeWorkAddress>>() {})
                             .thenApply(res::withEmployeeWorkAddressesList);

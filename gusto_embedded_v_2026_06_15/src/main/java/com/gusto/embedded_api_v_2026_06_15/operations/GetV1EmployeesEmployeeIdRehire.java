@@ -154,7 +154,7 @@ public class GetV1EmployeesEmployeeIdRehire {
 
             GetV1EmployeesEmployeeIdRehireResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withRehire(Utils.unmarshal(response, new TypeReference<Rehire>() {}));
                 } else {
@@ -235,7 +235,7 @@ public class GetV1EmployeesEmployeeIdRehire {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.GetV1EmployeesEmployeeIdRehireResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Rehire>() {})
                             .thenApply(res::withRehire);

@@ -154,7 +154,7 @@ public class GetV1ContractorPaymentsContractorPaymentUuidReceipt {
 
             GetV1ContractorPaymentsContractorPaymentUuidReceiptResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withContractorPaymentReceipt(Utils.unmarshal(response, new TypeReference<ContractorPaymentReceipt>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1ContractorPaymentsContractorPaymentUuidReceipt {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1ContractorPaymentsContractorPaymentUuidReceiptResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<ContractorPaymentReceipt>() {})
                             .thenApply(res::withContractorPaymentReceipt);

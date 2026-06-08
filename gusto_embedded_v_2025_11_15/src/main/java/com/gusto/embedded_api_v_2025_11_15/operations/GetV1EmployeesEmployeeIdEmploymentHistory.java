@@ -155,7 +155,7 @@ public class GetV1EmployeesEmployeeIdEmploymentHistory {
 
             GetV1EmployeesEmployeeIdEmploymentHistoryResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmploymentHistoryList(Utils.unmarshal(response, new TypeReference<List<EmploymentHistoryList>>() {}));
                 } else {
@@ -232,7 +232,7 @@ public class GetV1EmployeesEmployeeIdEmploymentHistory {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1EmployeesEmployeeIdEmploymentHistoryResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<EmploymentHistoryList>>() {})
                             .thenApply(res::withEmploymentHistoryList);

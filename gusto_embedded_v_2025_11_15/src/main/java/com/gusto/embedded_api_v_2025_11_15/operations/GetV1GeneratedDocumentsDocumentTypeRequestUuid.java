@@ -154,7 +154,7 @@ public class GetV1GeneratedDocumentsDocumentTypeRequestUuid {
 
             GetV1GeneratedDocumentsDocumentTypeRequestUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withGeneratedDocument(Utils.unmarshal(response, new TypeReference<GeneratedDocument>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1GeneratedDocumentsDocumentTypeRequestUuid {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1GeneratedDocumentsDocumentTypeRequestUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<GeneratedDocument>() {})
                             .thenApply(res::withGeneratedDocument);

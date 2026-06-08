@@ -172,7 +172,7 @@ public class GetCompaniesCompanyUuidContractorPaymentsPreview {
 
             GetCompaniesCompanyUuidContractorPaymentsPreviewResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withContractorPaymentsPreview(Utils.unmarshal(response, new TypeReference<ContractorPaymentsPreview>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class GetCompaniesCompanyUuidContractorPaymentsPreview {
 
             com.gusto.embedded_api.models.operations.async.GetCompaniesCompanyUuidContractorPaymentsPreviewResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<ContractorPaymentsPreview>() {})
                             .thenApply(res::withContractorPaymentsPreview);

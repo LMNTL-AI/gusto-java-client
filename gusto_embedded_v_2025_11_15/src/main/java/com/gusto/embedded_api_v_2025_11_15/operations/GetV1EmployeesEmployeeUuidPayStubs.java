@@ -160,7 +160,7 @@ public class GetV1EmployeesEmployeeUuidPayStubs {
 
             GetV1EmployeesEmployeeUuidPayStubsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmployeePayStubsList(Utils.unmarshal(response, new TypeReference<List<EmployeePayStubsList>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetV1EmployeesEmployeeUuidPayStubs {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1EmployeesEmployeeUuidPayStubsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<EmployeePayStubsList>>() {})
                             .thenApply(res::withEmployeePayStubsList);

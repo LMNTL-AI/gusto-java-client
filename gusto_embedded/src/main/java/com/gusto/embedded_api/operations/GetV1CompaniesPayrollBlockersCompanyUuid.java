@@ -155,7 +155,7 @@ public class GetV1CompaniesPayrollBlockersCompanyUuid {
 
             GetV1CompaniesPayrollBlockersCompanyUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPayrollBlockers(Utils.unmarshal(response, new TypeReference<List<PayrollBlocker>>() {}));
                 } else {
@@ -232,7 +232,7 @@ public class GetV1CompaniesPayrollBlockersCompanyUuid {
 
             com.gusto.embedded_api.models.operations.async.GetV1CompaniesPayrollBlockersCompanyUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<PayrollBlocker>>() {})
                             .thenApply(res::withPayrollBlockers);

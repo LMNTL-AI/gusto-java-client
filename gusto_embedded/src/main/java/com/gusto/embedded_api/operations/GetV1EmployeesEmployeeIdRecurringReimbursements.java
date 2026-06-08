@@ -160,7 +160,7 @@ public class GetV1EmployeesEmployeeIdRecurringReimbursements {
 
             GetV1EmployeesEmployeeIdRecurringReimbursementsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withRecurringReimbursementList(Utils.unmarshal(response, new TypeReference<List<RecurringReimbursement>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetV1EmployeesEmployeeIdRecurringReimbursements {
 
             com.gusto.embedded_api.models.operations.async.GetV1EmployeesEmployeeIdRecurringReimbursementsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<RecurringReimbursement>>() {})
                             .thenApply(res::withRecurringReimbursementList);

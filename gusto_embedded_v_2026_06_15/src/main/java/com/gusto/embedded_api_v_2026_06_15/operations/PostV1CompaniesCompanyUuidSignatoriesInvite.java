@@ -172,7 +172,7 @@ public class PostV1CompaniesCompanyUuidSignatoriesInvite {
 
             PostV1CompaniesCompanyUuidSignatoriesInviteResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withSignatory(Utils.unmarshal(response, new TypeReference<Signatory>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PostV1CompaniesCompanyUuidSignatoriesInvite {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.PostV1CompaniesCompanyUuidSignatoriesInviteResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Signatory>() {})
                             .thenApply(res::withSignatory);

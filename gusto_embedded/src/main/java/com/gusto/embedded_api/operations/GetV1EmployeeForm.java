@@ -154,7 +154,7 @@ public class GetV1EmployeeForm {
 
             GetV1EmployeeFormResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withForm(Utils.unmarshal(response, new TypeReference<Form>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1EmployeeForm {
 
             com.gusto.embedded_api.models.operations.async.GetV1EmployeeFormResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<Form>() {})
                             .thenApply(res::withForm);

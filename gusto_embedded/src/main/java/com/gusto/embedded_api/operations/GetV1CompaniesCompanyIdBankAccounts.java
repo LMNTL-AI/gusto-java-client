@@ -155,7 +155,7 @@ public class GetV1CompaniesCompanyIdBankAccounts {
 
             GetV1CompaniesCompanyIdBankAccountsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withCompanyBankAccounts(Utils.unmarshal(response, new TypeReference<List<CompanyBankAccount>>() {}));
                 } else {
@@ -232,7 +232,7 @@ public class GetV1CompaniesCompanyIdBankAccounts {
 
             com.gusto.embedded_api.models.operations.async.GetV1CompaniesCompanyIdBankAccountsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<CompanyBankAccount>>() {})
                             .thenApply(res::withCompanyBankAccounts);

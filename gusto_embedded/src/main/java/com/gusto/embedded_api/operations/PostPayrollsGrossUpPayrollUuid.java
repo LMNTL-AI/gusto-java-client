@@ -172,7 +172,7 @@ public class PostPayrollsGrossUpPayrollUuid {
 
             PostPayrollsGrossUpPayrollUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPayrollGrossUpResponse(Utils.unmarshal(response, new TypeReference<PayrollGrossUpResponse>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PostPayrollsGrossUpPayrollUuid {
 
             com.gusto.embedded_api.models.operations.async.PostPayrollsGrossUpPayrollUuidResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<PayrollGrossUpResponse>() {})
                             .thenApply(res::withPayrollGrossUpResponse);

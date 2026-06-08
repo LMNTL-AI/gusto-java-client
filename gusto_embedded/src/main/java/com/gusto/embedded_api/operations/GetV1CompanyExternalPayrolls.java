@@ -160,7 +160,7 @@ public class GetV1CompanyExternalPayrolls {
 
             GetV1CompanyExternalPayrollsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withExternalPayrollBasics(Utils.unmarshal(response, new TypeReference<List<ExternalPayrollBasic>>() {}));
                 } else {
@@ -237,7 +237,7 @@ public class GetV1CompanyExternalPayrolls {
 
             com.gusto.embedded_api.models.operations.async.GetV1CompanyExternalPayrollsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<ExternalPayrollBasic>>() {})
                             .thenApply(res::withExternalPayrollBasics);

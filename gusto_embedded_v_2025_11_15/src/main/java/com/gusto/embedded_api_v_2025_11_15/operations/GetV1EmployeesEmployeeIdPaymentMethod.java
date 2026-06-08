@@ -154,7 +154,7 @@ public class GetV1EmployeesEmployeeIdPaymentMethod {
 
             GetV1EmployeesEmployeeIdPaymentMethodResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmployeePaymentMethod(Utils.unmarshal(response, new TypeReference<EmployeePaymentMethod>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1EmployeesEmployeeIdPaymentMethod {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1EmployeesEmployeeIdPaymentMethodResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<EmployeePaymentMethod>() {})
                             .thenApply(res::withEmployeePaymentMethod);

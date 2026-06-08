@@ -151,7 +151,7 @@ public class GetV1GarnishmentsChildSupport {
 
             GetV1GarnishmentsChildSupportResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withChildSupportData(Utils.unmarshal(response, new TypeReference<ChildSupportData>() {}));
                 } else {
@@ -221,7 +221,7 @@ public class GetV1GarnishmentsChildSupport {
 
             com.gusto.embedded_api.models.operations.async.GetV1GarnishmentsChildSupportResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<ChildSupportData>() {})
                             .thenApply(res::withChildSupportData);

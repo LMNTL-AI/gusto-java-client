@@ -173,7 +173,7 @@ public class PutV1ContractorsContractorIdPaymentMethod {
 
             PutV1ContractorsContractorIdPaymentMethodResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withContractorPaymentMethod(Utils.unmarshal(response, new TypeReference<ContractorPaymentMethod>() {}));
                 } else {
@@ -264,7 +264,7 @@ public class PutV1ContractorsContractorIdPaymentMethod {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutV1ContractorsContractorIdPaymentMethodResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<ContractorPaymentMethod>() {})
                             .thenApply(res::withContractorPaymentMethod);

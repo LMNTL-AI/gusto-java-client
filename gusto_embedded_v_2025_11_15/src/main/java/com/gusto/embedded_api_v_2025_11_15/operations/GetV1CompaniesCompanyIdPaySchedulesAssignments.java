@@ -154,7 +154,7 @@ public class GetV1CompaniesCompanyIdPaySchedulesAssignments {
 
             GetV1CompaniesCompanyIdPaySchedulesAssignmentsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPayScheduleAssignment(Utils.unmarshal(response, new TypeReference<PayScheduleAssignment>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1CompaniesCompanyIdPaySchedulesAssignments {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1CompaniesCompanyIdPaySchedulesAssignmentsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<PayScheduleAssignment>() {})
                             .thenApply(res::withPayScheduleAssignment);

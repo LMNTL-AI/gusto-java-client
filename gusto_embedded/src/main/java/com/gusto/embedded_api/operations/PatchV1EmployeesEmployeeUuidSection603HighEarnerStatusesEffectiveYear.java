@@ -172,7 +172,7 @@ public class PatchV1EmployeesEmployeeUuidSection603HighEarnerStatusesEffectiveYe
 
             PatchV1EmployeesEmployeeUuidSection603HighEarnerStatusesEffectiveYearResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withEmployeeSection603HighEarnerStatus(Utils.unmarshal(response, new TypeReference<EmployeeSection603HighEarnerStatus>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PatchV1EmployeesEmployeeUuidSection603HighEarnerStatusesEffectiveYe
 
             com.gusto.embedded_api.models.operations.async.PatchV1EmployeesEmployeeUuidSection603HighEarnerStatusesEffectiveYearResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<EmployeeSection603HighEarnerStatus>() {})
                             .thenApply(res::withEmployeeSection603HighEarnerStatus);

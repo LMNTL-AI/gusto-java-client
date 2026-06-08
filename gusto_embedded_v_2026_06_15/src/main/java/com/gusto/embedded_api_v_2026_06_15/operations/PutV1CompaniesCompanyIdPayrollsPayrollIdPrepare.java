@@ -173,7 +173,7 @@ public class PutV1CompaniesCompanyIdPayrollsPayrollIdPrepare {
 
             PutV1CompaniesCompanyIdPayrollsPayrollIdPrepareResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPayrollPrepared(Utils.unmarshal(response, new TypeReference<PayrollPrepared>() {}));
                 } else {
@@ -257,7 +257,7 @@ public class PutV1CompaniesCompanyIdPayrollsPayrollIdPrepare {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.PutV1CompaniesCompanyIdPayrollsPayrollIdPrepareResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<PayrollPrepared>() {})
                             .thenApply(res::withPayrollPrepared);

@@ -155,7 +155,7 @@ public class GetV1ContractorDocuments {
 
             GetV1ContractorDocumentsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withDocuments(Utils.unmarshal(response, new TypeReference<List<Document>>() {}));
                 } else {
@@ -232,7 +232,7 @@ public class GetV1ContractorDocuments {
 
             com.gusto.embedded_api.models.operations.async.GetV1ContractorDocumentsResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<List<Document>>() {})
                             .thenApply(res::withDocuments);

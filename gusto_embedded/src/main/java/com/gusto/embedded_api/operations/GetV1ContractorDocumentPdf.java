@@ -155,7 +155,7 @@ public class GetV1ContractorDocumentPdf {
 
             GetV1ContractorDocumentPdfResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withDocumentPdf(Utils.unmarshal(response, new TypeReference<DocumentPdf>() {}));
                 } else {
@@ -239,7 +239,7 @@ public class GetV1ContractorDocumentPdf {
 
             com.gusto.embedded_api.models.operations.async.GetV1ContractorDocumentPdfResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<DocumentPdf>() {})
                             .thenApply(res::withDocumentPdf);

@@ -172,7 +172,7 @@ public class PutV1PartnerManagedCompaniesCompanyUuidMigrate {
 
             PutV1PartnerManagedCompaniesCompanyUuidMigrateResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withPartnerManagedCompanyMigrateResponse(Utils.unmarshal(response, new TypeReference<PartnerManagedCompanyMigrateResponse>() {}));
                 } else {
@@ -256,7 +256,7 @@ public class PutV1PartnerManagedCompaniesCompanyUuidMigrate {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.PutV1PartnerManagedCompaniesCompanyUuidMigrateResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<PartnerManagedCompanyMigrateResponse>() {})
                             .thenApply(res::withPartnerManagedCompanyMigrateResponse);

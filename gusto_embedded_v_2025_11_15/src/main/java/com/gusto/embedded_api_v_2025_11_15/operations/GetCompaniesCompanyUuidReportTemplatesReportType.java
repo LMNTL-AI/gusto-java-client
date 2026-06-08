@@ -155,7 +155,7 @@ public class GetCompaniesCompanyUuidReportTemplatesReportType {
 
             GetCompaniesCompanyUuidReportTemplatesReportTypeResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withReportTemplate(Utils.unmarshal(response, new TypeReference<ReportTemplate>() {}));
                 } else {
@@ -239,7 +239,7 @@ public class GetCompaniesCompanyUuidReportTemplatesReportType {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetCompaniesCompanyUuidReportTemplatesReportTypeResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<ReportTemplate>() {})
                             .thenApply(res::withReportTemplate);

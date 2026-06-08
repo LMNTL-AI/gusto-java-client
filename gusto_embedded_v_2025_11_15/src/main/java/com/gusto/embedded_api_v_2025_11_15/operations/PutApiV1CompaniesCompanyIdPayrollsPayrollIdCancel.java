@@ -155,7 +155,7 @@ public class PutApiV1CompaniesCompanyIdPayrollsPayrollIdCancel {
 
             PutApiV1CompaniesCompanyIdPayrollsPayrollIdCancelResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withUnprocessedPayroll(Utils.unmarshal(response, new TypeReference<UnprocessedPayroll>() {}));
                 } else {
@@ -239,7 +239,7 @@ public class PutApiV1CompaniesCompanyIdPayrollsPayrollIdCancel {
 
             com.gusto.embedded_api_v_2025_11_15.models.operations.async.PutApiV1CompaniesCompanyIdPayrollsPayrollIdCancelResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<UnprocessedPayroll>() {})
                             .thenApply(res::withUnprocessedPayroll);

@@ -154,7 +154,7 @@ public class GetV1ContractorsContractorUuidOnboardingStatus {
 
             GetV1ContractorsContractorUuidOnboardingStatusResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return res.withContractorOnboardingStatus(Utils.unmarshal(response, new TypeReference<ContractorOnboardingStatus>() {}));
                 } else {
@@ -231,7 +231,7 @@ public class GetV1ContractorsContractorUuidOnboardingStatus {
 
             com.gusto.embedded_api_v_2026_06_15.models.operations.async.GetV1ContractorsContractorUuidOnboardingStatusResponse res = resBuilder.build();
             
-            if (Utils.statusCodeMatches(response.statusCode(), "200")) {
+            if (Utils.statusCodeMatches(response.statusCode(), "2XX")) {
                 if (Utils.contentTypeMatches(contentType, "application/json")) {
                     return Utils.unmarshalAsync(response, new TypeReference<ContractorOnboardingStatus>() {})
                             .thenApply(res::withContractorOnboardingStatus);
