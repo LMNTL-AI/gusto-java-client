@@ -18,10 +18,10 @@ scope: `employees:manage employees:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.time.LocalDate;
 

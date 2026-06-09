@@ -5,7 +5,7 @@ The current status of the batch processing.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PeopleBatchStatus;
+import com.gusto.embedded_api.models.components.PeopleBatchStatus;
 
 PeopleBatchStatus value = PeopleBatchStatus.PENDING;
 ```

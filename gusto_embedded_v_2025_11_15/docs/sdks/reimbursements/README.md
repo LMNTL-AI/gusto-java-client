@@ -22,10 +22,10 @@ scope: `reimbursements:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1EmployeesEmployeeIdRecurringReimbursementsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1EmployeesEmployeeIdRecurringReimbursementsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1EmployeesEmployeeIdRecurringReimbursementsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1EmployeesEmployeeIdRecurringReimbursementsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -80,9 +80,9 @@ scope: `reimbursements:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 
 public class Application {
@@ -140,10 +140,10 @@ scope: `reimbursements:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1RecurringReimbursementsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1RecurringReimbursementsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1RecurringReimbursementsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1RecurringReimbursementsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -196,9 +196,9 @@ scope: `reimbursements:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 
 public class Application {
@@ -255,10 +255,10 @@ scope: `reimbursements:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteV1RecurringReimbursementsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteV1RecurringReimbursementsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.DeleteV1RecurringReimbursementsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.DeleteV1RecurringReimbursementsResponse;
 import java.lang.Exception;
 
 public class Application {

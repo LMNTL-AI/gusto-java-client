@@ -5,7 +5,7 @@ A unique identifier for the payroll blocker reason. For a complete list of block
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.Key;
+import com.gusto.embedded_api.models.components.Key;
 
 Key value = Key.COMPANY_OWNERSHIP_REQUIRED;
 ```

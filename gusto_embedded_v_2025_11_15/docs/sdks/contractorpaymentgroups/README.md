@@ -25,10 +25,10 @@ scope: `payrolls:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompaniesCompanyIdContractorPaymentGroupsRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompaniesCompanyIdContractorPaymentGroupsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyIdContractorPaymentGroupsRequest;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyIdContractorPaymentGroupsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -85,10 +85,10 @@ scope: `payrolls:run`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.time.LocalDate;
 import java.util.List;
@@ -152,10 +152,10 @@ scope: `payrolls:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.util.List;
 
@@ -214,10 +214,10 @@ scope: `payrolls:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1ContractorPaymentGroupsContractorPaymentGroupIdHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1ContractorPaymentGroupsContractorPaymentGroupIdResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1ContractorPaymentGroupsContractorPaymentGroupIdHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1ContractorPaymentGroupsContractorPaymentGroupIdResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -270,11 +270,11 @@ scope: `payrolls:run`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteV1ContractorPaymentGroupsContractorPaymentGroupIdHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteV1ContractorPaymentGroupsContractorPaymentGroupIdResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.DeleteV1ContractorPaymentGroupsContractorPaymentGroupIdHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.DeleteV1ContractorPaymentGroupsContractorPaymentGroupIdResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -329,11 +329,11 @@ scope: `payrolls:run`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1ContractorPaymentGroupsContractorPaymentGroupIdFundHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1ContractorPaymentGroupsContractorPaymentGroupIdFundResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutV1ContractorPaymentGroupsContractorPaymentGroupIdFundHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutV1ContractorPaymentGroupsContractorPaymentGroupIdFundResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -387,10 +387,10 @@ scope: `partner_disbursements:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1ContractorPaymentGroupsIdPartnerDisbursementsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1ContractorPaymentGroupsIdPartnerDisbursementsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1ContractorPaymentGroupsIdPartnerDisbursementsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1ContractorPaymentGroupsIdPartnerDisbursementsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -443,10 +443,10 @@ scope: `partner_disbursements:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.util.List;
 

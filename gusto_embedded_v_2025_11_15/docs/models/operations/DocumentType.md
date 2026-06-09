@@ -5,7 +5,7 @@ The type of document being generated
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DocumentType;
+import com.gusto.embedded_api.models.operations.DocumentType;
 
 DocumentType value = DocumentType.PRINTABLE_PAYROLL_CHECKS;
 ```

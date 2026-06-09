@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1WebhookSubscriptionUuidSubscriptionTypes;
+import com.gusto.embedded_api.models.operations.PutV1WebhookSubscriptionUuidSubscriptionTypes;
 
 PutV1WebhookSubscriptionUuidSubscriptionTypes value = PutV1WebhookSubscriptionUuidSubscriptionTypes.BANK_ACCOUNT;
 ```

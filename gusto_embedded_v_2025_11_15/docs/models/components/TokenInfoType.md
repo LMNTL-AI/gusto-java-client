@@ -9,7 +9,7 @@ The type of resource owner:
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.TokenInfoType;
+import com.gusto.embedded_api.models.components.TokenInfoType;
 
 TokenInfoType value = TokenInfoType.COMPANY_ADMIN;
 ```

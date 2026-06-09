@@ -5,7 +5,7 @@ The type of file to generate
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.FileType;
+import com.gusto.embedded_api.models.components.FileType;
 
 FileType value = FileType.CSV;
 ```

@@ -5,7 +5,7 @@ The status of the payment
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PayrollPartnerDisbursementsPaymentStatus;
+import com.gusto.embedded_api.models.components.PayrollPartnerDisbursementsPaymentStatus;
 
 PayrollPartnerDisbursementsPaymentStatus value = PayrollPartnerDisbursementsPaymentStatus.PENDING;
 ```

@@ -21,9 +21,9 @@ scope: `people_batches:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.*;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.*;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.util.List;
 
@@ -87,10 +87,10 @@ scope: `people_batches:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1PeopleBatchesPeopleBatchUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1PeopleBatchesPeopleBatchUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1PeopleBatchesPeopleBatchUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1PeopleBatchesPeopleBatchUuidResponse;
 import java.lang.Exception;
 
 public class Application {

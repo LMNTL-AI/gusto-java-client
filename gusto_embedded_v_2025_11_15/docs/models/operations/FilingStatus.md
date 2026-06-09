@@ -5,7 +5,7 @@ Determines which tax return form an individual will use. One of: Single, Married
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.FilingStatus;
+import com.gusto.embedded_api.models.operations.FilingStatus;
 
 FilingStatus value = FilingStatus.SINGLE;
 ```

@@ -5,7 +5,7 @@ The status of the ACH transaction
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PaymentStatus;
+import com.gusto.embedded_api.models.components.PaymentStatus;
 
 PaymentStatus value = PaymentStatus.UNSUBMITTED;
 ```

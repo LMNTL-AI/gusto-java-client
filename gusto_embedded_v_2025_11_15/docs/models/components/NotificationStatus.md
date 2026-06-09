@@ -5,7 +5,7 @@ Represents the notification's status as managed by our system. It is updated bas
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.NotificationStatus;
+import com.gusto.embedded_api.models.components.NotificationStatus;
 
 NotificationStatus value = NotificationStatus.OPEN;
 ```

@@ -5,7 +5,7 @@ The earning type class name.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.ExternalPayrollUpdateRequestEarningType;
+import com.gusto.embedded_api.models.components.ExternalPayrollUpdateRequestEarningType;
 
 ExternalPayrollUpdateRequestEarningType value = ExternalPayrollUpdateRequestEarningType.COMPANY_PAY_TYPE;
 ```

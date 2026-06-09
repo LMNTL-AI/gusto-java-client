@@ -82,9 +82,9 @@ gradlew.bat publishToMavenLocal -Pskip.signing
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1TokenInfoResponse;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.XGustoAPIVersion;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetV1TokenInfoResponse;
+import com.gusto.embedded_api.models.operations.XGustoAPIVersion;
 import java.lang.Exception;
 
 public class Application {
@@ -110,10 +110,10 @@ An asynchronous SDK client is also available that returns a [`CompletableFuture<
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.AsyncGustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.XGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.async.GetV1TokenInfoResponse;
+import com.gusto.embedded_api.AsyncGustoEmbedded;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.XGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.async.GetV1TokenInfoResponse;
 import java.util.concurrent.CompletableFuture;
 
 public class Application {
@@ -231,9 +231,9 @@ To authenticate with the API the `companyAccessAuth` parameter must be set when 
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1TokenInfoResponse;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.XGustoAPIVersion;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetV1TokenInfoResponse;
+import com.gusto.embedded_api.models.operations.XGustoAPIVersion;
 import java.lang.Exception;
 
 public class Application {
@@ -261,10 +261,10 @@ Some operations in this SDK require the security scheme to be specified at the r
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.*;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.*;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 
 public class Application {
@@ -796,11 +796,11 @@ Handling errors in this SDK should largely match your expectations. All operatio
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.*;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.GustoEmbeddedException;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.*;
+import com.gusto.embedded_api.models.errors.GustoEmbeddedException;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.*;
 import java.io.UncheckedIOException;
 import java.lang.Exception;
 import java.util.List;
@@ -872,7 +872,7 @@ public class Application {
 ### Error Classes
 **Primary errors:**
 * [`GustoEmbeddedException`](./src/main/java/models/errors/GustoEmbeddedException.java): The base class for HTTP error responses.
-  * [`com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject`](./src/main/java/models/errors/com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject.java): Not Found     The requested resource does not exist. Make sure the provided ID/UUID is valid. *
+  * [`com.gusto.embedded_api.models.errors.NotFoundErrorObject`](./src/main/java/models/errors/com.gusto.embedded_api.models.errors.NotFoundErrorObject.java): Not Found     The requested resource does not exist. Make sure the provided ID/UUID is valid. *
 
 <details><summary>Less common errors (11)</summary>
 
@@ -884,11 +884,11 @@ public class Application {
 many more subclasses in the JDK platform).
 
 **Inherit from [`GustoEmbeddedException`](./src/main/java/models/errors/GustoEmbeddedException.java)**:
-* [`com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError`](./src/main/java/models/errors/com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError.java): Unprocessable Entity    This may happen when the body of your request contains errors such as `invalid_attribute_value`, or the request fails due to an `invalid_operation`. See the [Errors Categories](https://docs.gusto.com/embedded-payroll/docs/error-categories) guide for more details. Applicable to 159 of 299 methods.*
-* [`com.gusto.embedded_api_v_2025_11_15.models.errors.ConflictErrorObject`](./src/main/java/models/errors/com.gusto.embedded_api_v_2025_11_15.models.errors.ConflictErrorObject.java): Conflict    This error occurs when the resource version provided does not match the current version. Retrieve the latest version and retry. Status code `409`. Applicable to 2 of 299 methods.*
-* [`com.gusto.embedded_api_v_2025_11_15.models.errors.PeopleBatchConflictError`](./src/main/java/models/errors/com.gusto.embedded_api_v_2025_11_15.models.errors.PeopleBatchConflictError.java): Error response when a people batch idempotency key conflict occurs. Status code `409`. Applicable to 1 of 299 methods.*
-* [`com.gusto.embedded_api_v_2025_11_15.models.errors.PayrollDigestConflictError`](./src/main/java/models/errors/com.gusto.embedded_api_v_2025_11_15.models.errors.PayrollDigestConflictError.java): Error response when a payroll digest idempotency key has already been used by the same partner. Status code `409`. Applicable to 1 of 299 methods.*
-* [`com.gusto.embedded_api_v_2025_11_15.models.errors.PayrollBlockersError`](./src/main/java/models/errors/com.gusto.embedded_api_v_2025_11_15.models.errors.PayrollBlockersError.java): Payroll Blockers Error  For detailed information, see the [Payroll Blockers guide](https://docs.gusto.com/embedded-payroll/docs/payroll-blockers). Status code `422`. Applicable to 1 of 299 methods.*
+* [`com.gusto.embedded_api.models.errors.UnprocessableEntityError`](./src/main/java/models/errors/com.gusto.embedded_api.models.errors.UnprocessableEntityError.java): Unprocessable Entity    This may happen when the body of your request contains errors such as `invalid_attribute_value`, or the request fails due to an `invalid_operation`. See the [Errors Categories](https://docs.gusto.com/embedded-payroll/docs/error-categories) guide for more details. Applicable to 159 of 299 methods.*
+* [`com.gusto.embedded_api.models.errors.ConflictErrorObject`](./src/main/java/models/errors/com.gusto.embedded_api.models.errors.ConflictErrorObject.java): Conflict    This error occurs when the resource version provided does not match the current version. Retrieve the latest version and retry. Status code `409`. Applicable to 2 of 299 methods.*
+* [`com.gusto.embedded_api.models.errors.PeopleBatchConflictError`](./src/main/java/models/errors/com.gusto.embedded_api.models.errors.PeopleBatchConflictError.java): Error response when a people batch idempotency key conflict occurs. Status code `409`. Applicable to 1 of 299 methods.*
+* [`com.gusto.embedded_api.models.errors.PayrollDigestConflictError`](./src/main/java/models/errors/com.gusto.embedded_api.models.errors.PayrollDigestConflictError.java): Error response when a payroll digest idempotency key has already been used by the same partner. Status code `409`. Applicable to 1 of 299 methods.*
+* [`com.gusto.embedded_api.models.errors.PayrollBlockersError`](./src/main/java/models/errors/com.gusto.embedded_api.models.errors.PayrollBlockersError.java): Payroll Blockers Error  For detailed information, see the [Payroll Blockers guide](https://docs.gusto.com/embedded-payroll/docs/payroll-blockers). Status code `422`. Applicable to 1 of 299 methods.*
 
 
 </details>
@@ -913,9 +913,9 @@ You can override the default server globally using the `.server(AvailableServers
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1TokenInfoResponse;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.XGustoAPIVersion;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetV1TokenInfoResponse;
+import com.gusto.embedded_api.models.operations.XGustoAPIVersion;
 import java.lang.Exception;
 
 public class Application {
@@ -944,9 +944,9 @@ The default server can also be overridden globally using the `.serverURL(String 
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1TokenInfoResponse;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.XGustoAPIVersion;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetV1TokenInfoResponse;
+import com.gusto.embedded_api.models.operations.XGustoAPIVersion;
 import java.lang.Exception;
 
 public class Application {
@@ -988,10 +988,10 @@ is used to power the async SDK methods and returns a `CompletableFuture<HttpResp
 The following example shows how to add a custom header and handle errors:
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.utils.HTTPClient;
-import com.gusto.embedded_api_v_2025_11_15.utils.SpeakeasyHTTPClient;
-import com.gusto.embedded_api_v_2025_11_15.utils.Utils;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.utils.HTTPClient;
+import com.gusto.embedded_api.utils.SpeakeasyHTTPClient;
+import com.gusto.embedded_api.utils.Utils;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -1040,10 +1040,10 @@ public class Application {
 You can also provide a completely custom HTTP client with your own configuration:
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.utils.HTTPClient;
-import com.gusto.embedded_api_v_2025_11_15.utils.Blob;
-import com.gusto.embedded_api_v_2025_11_15.utils.ResponseWithBody;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.utils.HTTPClient;
+import com.gusto.embedded_api.utils.Blob;
+import com.gusto.embedded_api.utils.ResponseWithBody;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -1090,8 +1090,8 @@ public class Application {
 You can also enable debug logging on the default `SpeakeasyHTTPClient`:
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.utils.SpeakeasyHTTPClient;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.utils.SpeakeasyHTTPClient;
 
 public class Application {
     public static void main(String[] args) {
@@ -1148,7 +1148,7 @@ The SDK ships with a pre-configured Jackson [`ObjectMapper`][jackson-databind] a
 needed for full SDK compatibility (including ISO-8601 `OffsetDateTime` serialization):
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.utils.JSON;
+import com.gusto.embedded_api.utils.JSON;
 
 String json = JSON.getMapper().writeValueAsString(response);
 ```
@@ -1157,7 +1157,7 @@ To compose with your own `ObjectMapper`, register the provided `GustoEmbeddedJac
 bundles all the same modules and feature flags as a single plug-and-play module:
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.utils.GustoEmbeddedJacksonModule;
+import com.gusto.embedded_api.utils.GustoEmbeddedJacksonModule;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 ObjectMapper myMapper = new ObjectMapper()

@@ -5,7 +5,7 @@ Specifies which date field to use when filtering payrolls with start_date and en
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DateFilterBy;
+import com.gusto.embedded_api.models.operations.DateFilterBy;
 
 DateFilterBy value = DateFilterBy.CHECK_DATE;
 ```

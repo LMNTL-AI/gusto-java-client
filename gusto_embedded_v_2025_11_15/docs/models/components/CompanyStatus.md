@@ -5,7 +5,7 @@ The status of the company in Gusto. "Approved" companies are approved to run pay
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.CompanyStatus;
+import com.gusto.embedded_api.models.components.CompanyStatus;
 
 CompanyStatus value = CompanyStatus.APPROVED;
 ```

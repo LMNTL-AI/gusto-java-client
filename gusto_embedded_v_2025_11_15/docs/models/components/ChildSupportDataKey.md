@@ -5,7 +5,7 @@ A required attribute when creating a garnishment for this state agency. The curr
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.ChildSupportDataKey;
+import com.gusto.embedded_api.models.components.ChildSupportDataKey;
 
 ChildSupportDataKey value = ChildSupportDataKey.CASE_NUMBER;
 ```

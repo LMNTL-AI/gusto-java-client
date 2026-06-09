@@ -5,7 +5,7 @@ Accrual method of the time off policy
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.AccrualMethod;
+import com.gusto.embedded_api.models.operations.AccrualMethod;
 
 AccrualMethod value = AccrualMethod.UNLIMITED;
 ```

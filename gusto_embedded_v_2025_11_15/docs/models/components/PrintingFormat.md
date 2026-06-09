@@ -5,7 +5,7 @@ The type of check stock being printed. Check the "Types of check stock" section 
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PrintingFormat;
+import com.gusto.embedded_api.models.components.PrintingFormat;
 
 PrintingFormat value = PrintingFormat.TOP;
 ```

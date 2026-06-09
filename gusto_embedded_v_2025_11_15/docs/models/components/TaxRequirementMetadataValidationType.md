@@ -5,7 +5,7 @@ Describes the type of tax_rate validation rule
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.TaxRequirementMetadataValidationType;
+import com.gusto.embedded_api.models.components.TaxRequirementMetadataValidationType;
 
 TaxRequirementMetadataValidationType value = TaxRequirementMetadataValidationType.ONE_OF;
 ```

@@ -5,7 +5,7 @@ The payment schedule tax rate the payroll is based on.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.WithholdingPayPeriod;
+import com.gusto.embedded_api.models.operations.WithholdingPayPeriod;
 
 WithholdingPayPeriod value = WithholdingPayPeriod.EVERY_WEEK;
 ```

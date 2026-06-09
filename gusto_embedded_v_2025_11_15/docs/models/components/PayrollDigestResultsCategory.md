@@ -5,7 +5,7 @@ Machine-readable category for why the company was excluded.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PayrollDigestResultsCategory;
+import com.gusto.embedded_api.models.components.PayrollDigestResultsCategory;
 
 PayrollDigestResultsCategory value = PayrollDigestResultsCategory.NOT_FOUND;
 ```

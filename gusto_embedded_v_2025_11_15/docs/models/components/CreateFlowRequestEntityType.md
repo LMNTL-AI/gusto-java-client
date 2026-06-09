@@ -5,7 +5,7 @@ The type of target entity applicable to the flow. This field is optional for com
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.CreateFlowRequestEntityType;
+import com.gusto.embedded_api.models.components.CreateFlowRequestEntityType;
 
 CreateFlowRequestEntityType value = CreateFlowRequestEntityType.COMPANY;
 ```

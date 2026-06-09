@@ -5,7 +5,7 @@ The status of the contractor payment group.  Will be `Funded` if all payments th
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.ContractorPaymentGroupStatus;
+import com.gusto.embedded_api.models.components.ContractorPaymentGroupStatus;
 
 ContractorPaymentGroupStatus value = ContractorPaymentGroupStatus.UNFUNDED;
 ```

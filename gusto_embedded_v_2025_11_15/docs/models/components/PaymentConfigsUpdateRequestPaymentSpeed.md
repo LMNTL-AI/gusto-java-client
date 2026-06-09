@@ -5,7 +5,7 @@ Desired payment speed. 1-day is only applicable to partners that opt in.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PaymentConfigsUpdateRequestPaymentSpeed;
+import com.gusto.embedded_api.models.components.PaymentConfigsUpdateRequestPaymentSpeed;
 
 PaymentConfigsUpdateRequestPaymentSpeed value = PaymentConfigsUpdateRequestPaymentSpeed.ONE_MINUS_DAY;
 ```

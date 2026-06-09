@@ -5,7 +5,7 @@ The updated onboarding status for the contractor.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.ContractorOnboardingStatusUpdateRequestBodyOnboardingStatus;
+import com.gusto.embedded_api.models.components.ContractorOnboardingStatusUpdateRequestBodyOnboardingStatus;
 
 ContractorOnboardingStatusUpdateRequestBodyOnboardingStatus value = ContractorOnboardingStatusUpdateRequestBodyOnboardingStatus.ADMIN_ONBOARDING_INCOMPLETE;
 ```

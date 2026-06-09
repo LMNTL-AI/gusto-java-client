@@ -5,7 +5,7 @@ Experience level for this occupation.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.ExperienceLevel;
+import com.gusto.embedded_api.models.components.ExperienceLevel;
 
 ExperienceLevel value = ExperienceLevel.NOVICE;
 ```

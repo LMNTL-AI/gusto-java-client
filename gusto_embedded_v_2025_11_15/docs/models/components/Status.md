@@ -5,7 +5,7 @@ The status of the external payroll. The status will be `unprocessed` when the ex
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.Status;
+import com.gusto.embedded_api.models.components.Status;
 
 Status value = Status.UNPROCESSED;
 ```

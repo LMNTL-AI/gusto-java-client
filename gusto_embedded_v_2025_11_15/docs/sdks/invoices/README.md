@@ -22,9 +22,9 @@ scope: `invoices:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 
 public class Application {
@@ -57,7 +57,7 @@ public class Application {
 | Parameter                                                                                                                                             | Type                                                                                                                                                  | Required                                                                                                                                              | Description                                                                                                                                           |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `request`                                                                                                                                             | [GetInvoicesInvoicePeriodRequest](../../models/operations/GetInvoicesInvoicePeriodRequest.md)                                                         | :heavy_check_mark:                                                                                                                                    | The request object to use for the request.                                                                                                            |
-| `security`                                                                                                                                            | [com.gusto.embedded_api_v_2025_11_15.models.operations.GetInvoicesInvoicePeriodSecurity](../../models/operations/GetInvoicesInvoicePeriodSecurity.md) | :heavy_check_mark:                                                                                                                                    | The security requirements to use for the request.                                                                                                     |
+| `security`                                                                                                                                            | [com.gusto.embedded_api.models.operations.GetInvoicesInvoicePeriodSecurity](../../models/operations/GetInvoicesInvoicePeriodSecurity.md) | :heavy_check_mark:                                                                                                                                    | The security requirements to use for the request.                                                                                                     |
 
 ### Response
 

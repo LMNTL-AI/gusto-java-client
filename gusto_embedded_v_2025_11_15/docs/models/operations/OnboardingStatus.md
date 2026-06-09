@@ -5,7 +5,7 @@ Onboarding status value
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.OnboardingStatus;
+import com.gusto.embedded_api.models.operations.OnboardingStatus;
 
 OnboardingStatus value = OnboardingStatus.ADMIN_ONBOARDING_INCOMPLETE;
 ```

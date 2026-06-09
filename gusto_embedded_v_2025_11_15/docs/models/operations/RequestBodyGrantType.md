@@ -5,7 +5,7 @@ Set system_access to create a system access token, refresh_token to refresh an e
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.RequestBodyGrantType;
+import com.gusto.embedded_api.models.operations.RequestBodyGrantType;
 
 RequestBodyGrantType value = RequestBodyGrantType.SYSTEM_ACCESS;
 ```

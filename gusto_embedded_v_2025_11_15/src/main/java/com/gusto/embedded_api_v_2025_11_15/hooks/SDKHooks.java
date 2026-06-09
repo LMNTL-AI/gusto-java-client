@@ -1,4 +1,4 @@
-package com.gusto.embedded_api_v_2025_11_15.hooks;
+package com.gusto.embedded_api.hooks;
 
 //
 // This file is written once by speakeasy code generation and
@@ -12,7 +12,7 @@ public final class SDKHooks {
         // prevent instantiation
     }
 
-    public static void initialize(com.gusto.embedded_api_v_2025_11_15.utils.Hooks hooks) {
+    public static void initialize(com.gusto.embedded_api.utils.Hooks hooks) {
         // register synchronous hooks here
         // hooks.registerBeforeRequest(...);
         // hooks.registerAfterSuccess(...);
@@ -22,14 +22,14 @@ public final class SDKHooks {
         // https://www.speakeasy.com/docs/additional-features/sdk-hooks
     }
 
-    public static void initialize(com.gusto.embedded_api_v_2025_11_15.utils.AsyncHooks asyncHooks) {
+    public static void initialize(com.gusto.embedded_api.utils.AsyncHooks asyncHooks) {
         // register async hooks here
         // asyncHooks.registerBeforeRequest(...);
         // asyncHooks.registerAfterSuccess(...);
         // asyncHooks.registerAfterError(...);
         
         // NOTE: If you have existing synchronous hooks, you can adapt them using HookAdapters:
-        // asyncHooks.registerAfterError(com.gusto.embedded_api_v_2025_11_15.utils.HookAdapters.adapt(mySyncHook));
+        // asyncHooks.registerAfterError(com.gusto.embedded_api.utils.HookAdapters.adapt(mySyncHook));
         
         // PERFORMANCE TIP: For better performance, implement async hooks directly using
         // non-blocking I/O (NIO) APIs instead of adapting synchronous hooks, as adapters

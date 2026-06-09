@@ -5,7 +5,7 @@ Set system_access to create a system access token, refresh_token to refresh an e
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GrantType;
+import com.gusto.embedded_api.models.operations.GrantType;
 
 GrantType value = GrantType.REFRESH_TOKEN;
 ```

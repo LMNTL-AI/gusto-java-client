@@ -5,7 +5,7 @@ The FLSA status for this compensation. Salaried ('Exempt') employees are paid a 
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.FlsaStatus;
+import com.gusto.embedded_api.models.operations.FlsaStatus;
 
 FlsaStatus value = FlsaStatus.EXEMPT;
 ```

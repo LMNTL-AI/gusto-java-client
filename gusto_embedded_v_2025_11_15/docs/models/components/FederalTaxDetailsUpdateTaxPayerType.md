@@ -17,7 +17,7 @@ What type of tax entity the company is. One of:
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.FederalTaxDetailsUpdateTaxPayerType;
+import com.gusto.embedded_api.models.components.FederalTaxDetailsUpdateTaxPayerType;
 
 FederalTaxDetailsUpdateTaxPayerType value = FederalTaxDetailsUpdateTaxPayerType.C_CORPORATION;
 ```

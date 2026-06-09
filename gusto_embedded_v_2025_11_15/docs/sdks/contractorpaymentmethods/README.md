@@ -20,13 +20,13 @@ scope: `contractor_payment_methods:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.ContractorBankAccountCreateRequestBody;
-import com.gusto.embedded_api_v_2025_11_15.models.components.ContractorBankAccountCreateRequestBodyAccountType;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PostV1ContractorsContractorUuidBankAccountsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PostV1ContractorsContractorUuidBankAccountsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.ContractorBankAccountCreateRequestBody;
+import com.gusto.embedded_api.models.components.ContractorBankAccountCreateRequestBodyAccountType;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PostV1ContractorsContractorUuidBankAccountsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PostV1ContractorsContractorUuidBankAccountsResponse;
 import java.lang.Exception;
 
 public class Application {

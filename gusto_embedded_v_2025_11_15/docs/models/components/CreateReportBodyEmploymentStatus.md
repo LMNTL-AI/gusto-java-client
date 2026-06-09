@@ -5,7 +5,7 @@ Employee employment status to filter by
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.CreateReportBodyEmploymentStatus;
+import com.gusto.embedded_api.models.components.CreateReportBodyEmploymentStatus;
 
 CreateReportBodyEmploymentStatus value = CreateReportBodyEmploymentStatus.ACTIVE_FULL_TIME;
 ```

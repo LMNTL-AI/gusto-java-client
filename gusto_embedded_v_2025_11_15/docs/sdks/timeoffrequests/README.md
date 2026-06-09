@@ -27,9 +27,9 @@ scope: `time_off_requests:manage`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.util.Map;
 
@@ -94,10 +94,10 @@ scope: `time_off_requests:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompaniesCompanyUuidTimeOffBalancesRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompaniesCompanyUuidTimeOffBalancesResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyUuidTimeOffBalancesRequest;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyUuidTimeOffBalancesResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -160,11 +160,11 @@ scope: `time_off_requests:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompaniesCompanyUuidTimeOffRequestsRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompaniesCompanyUuidTimeOffRequestsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyUuidTimeOffRequestsRequest;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyUuidTimeOffRequestsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -220,9 +220,9 @@ scope: `time_off_requests:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.util.Map;
 
@@ -287,9 +287,9 @@ scope: `time_off_requests:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.util.Map;
 
@@ -354,10 +354,10 @@ scope: `time_off_requests:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1TimeOffRequestsTimeOffRequestUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1TimeOffRequestsTimeOffRequestUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1TimeOffRequestsTimeOffRequestUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1TimeOffRequestsTimeOffRequestUuidResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -410,11 +410,11 @@ scope: `time_off_requests:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteV1TimeOffRequestsTimeOffRequestUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteV1TimeOffRequestsTimeOffRequestUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.DeleteV1TimeOffRequestsTimeOffRequestUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.DeleteV1TimeOffRequestsTimeOffRequestUuidResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -468,11 +468,11 @@ scope: `time_off_requests:manage`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1TimeOffRequestsTimeOffRequestUuidApproveHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1TimeOffRequestsTimeOffRequestUuidApproveResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutV1TimeOffRequestsTimeOffRequestUuidApproveHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutV1TimeOffRequestsTimeOffRequestUuidApproveResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -527,10 +527,10 @@ scope: `time_off_requests:manage`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 
 public class Application {

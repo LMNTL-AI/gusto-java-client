@@ -5,7 +5,7 @@ The type of entity being described.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.NotificationEntityType;
+import com.gusto.embedded_api.models.components.NotificationEntityType;
 
 NotificationEntityType value = NotificationEntityType.BANK_ACCOUNT;
 ```

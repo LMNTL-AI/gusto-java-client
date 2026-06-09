@@ -34,10 +34,10 @@ scope: `company_benefits:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompaniesCompanyIdCompanyBenefitsRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompaniesCompanyIdCompanyBenefitsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyIdCompanyBenefitsRequest;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyIdCompanyBenefitsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -96,12 +96,12 @@ scope: `company_benefits:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.CompanyBenefitCreateRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PostV1CompaniesCompanyIdCompanyBenefitsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PostV1CompaniesCompanyIdCompanyBenefitsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.CompanyBenefitCreateRequest;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PostV1CompaniesCompanyIdCompanyBenefitsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PostV1CompaniesCompanyIdCompanyBenefitsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -163,10 +163,10 @@ scope: `company_benefits:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompanyBenefitsCompanyBenefitIdHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompanyBenefitsCompanyBenefitIdResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1CompanyBenefitsCompanyBenefitIdHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1CompanyBenefitsCompanyBenefitIdResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -225,12 +225,12 @@ scope: `company_benefits:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.CompanyBenefitUpdateRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1CompanyBenefitsCompanyBenefitIdHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1CompanyBenefitsCompanyBenefitIdResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.CompanyBenefitUpdateRequest;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutV1CompanyBenefitsCompanyBenefitIdHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutV1CompanyBenefitsCompanyBenefitIdResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -294,11 +294,11 @@ scope: `company_benefits:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteV1CompanyBenefitsCompanyBenefitIdHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteV1CompanyBenefitsCompanyBenefitIdResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.DeleteV1CompanyBenefitsCompanyBenefitIdHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.DeleteV1CompanyBenefitsCompanyBenefitIdResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -350,9 +350,9 @@ scope: `benefits:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1BenefitsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1BenefitsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetV1BenefitsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1BenefitsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -402,9 +402,9 @@ scope: `benefits:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1BenefitsBenefitIdHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1BenefitsBenefitIdResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetV1BenefitsBenefitIdHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1BenefitsBenefitIdResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -458,10 +458,10 @@ scope: `company_benefits:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1BenefitsCompanyBenefitIdSummaryRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1BenefitsCompanyBenefitIdSummaryResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1BenefitsCompanyBenefitIdSummaryRequest;
+import com.gusto.embedded_api.models.operations.GetV1BenefitsCompanyBenefitIdSummaryResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -522,10 +522,10 @@ scope: `employee_benefits:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompanyBenefitsCompanyBenefitIdEmployeeBenefitsRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompanyBenefitsCompanyBenefitIdEmployeeBenefitsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1CompanyBenefitsCompanyBenefitIdEmployeeBenefitsRequest;
+import com.gusto.embedded_api.models.operations.GetV1CompanyBenefitsCompanyBenefitIdEmployeeBenefitsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -586,12 +586,12 @@ scope: `employee_benefits:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.*;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1CompanyBenefitsCompanyBenefitIdEmployeeBenefitsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1CompanyBenefitsCompanyBenefitIdEmployeeBenefitsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.*;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutV1CompanyBenefitsCompanyBenefitIdEmployeeBenefitsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutV1CompanyBenefitsCompanyBenefitIdEmployeeBenefitsResponse;
 import java.lang.Exception;
 import java.util.List;
 
@@ -654,10 +654,10 @@ scope: `benefits:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1BenefitsBenefitsIdRequirementsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1BenefitsBenefitsIdRequirementsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1BenefitsBenefitsIdRequirementsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1BenefitsBenefitsIdRequirementsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -712,10 +712,10 @@ scope: `company_benefits:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompanyBenefitsCompanyBenefitIdContributionExclusionsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompanyBenefitsCompanyBenefitIdContributionExclusionsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1CompanyBenefitsCompanyBenefitIdContributionExclusionsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1CompanyBenefitsCompanyBenefitIdContributionExclusionsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -770,13 +770,13 @@ scope: `company_benefits:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.ContributionExclusion;
-import com.gusto.embedded_api_v_2025_11_15.models.components.ContributionExclusionUpdateRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1CompanyBenefitsCompanyBenefitIdContributionExclusionsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1CompanyBenefitsCompanyBenefitIdContributionExclusionsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.ContributionExclusion;
+import com.gusto.embedded_api.models.components.ContributionExclusionUpdateRequest;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutV1CompanyBenefitsCompanyBenefitIdContributionExclusionsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutV1CompanyBenefitsCompanyBenefitIdContributionExclusionsResponse;
 import java.lang.Exception;
 import java.util.List;
 

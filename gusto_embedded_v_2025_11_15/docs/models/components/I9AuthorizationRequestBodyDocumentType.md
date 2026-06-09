@@ -9,7 +9,7 @@ The type of document an employee holds, based on their authorization status.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.I9AuthorizationRequestBodyDocumentType;
+import com.gusto.embedded_api.models.components.I9AuthorizationRequestBodyDocumentType;
 
 I9AuthorizationRequestBodyDocumentType value = I9AuthorizationRequestBodyDocumentType.USCIS_ALIEN_REGISTRATION_NUMBER;
 ```

@@ -15,7 +15,7 @@ Describes the type of requirement - each type may have additional metadata prope
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.TaxRequirementMetadataType;
+import com.gusto.embedded_api.models.components.TaxRequirementMetadataType;
 
 TaxRequirementMetadataType value = TaxRequirementMetadataType.TEXT;
 ```

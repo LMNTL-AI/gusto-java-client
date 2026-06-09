@@ -7,7 +7,7 @@ The form used by the company for federal tax filing. One of:
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.FilingForm;
+import com.gusto.embedded_api.models.components.FilingForm;
 
 FilingForm value = FilingForm.NINE_HUNDRED_AND_FORTY_ONE;
 ```

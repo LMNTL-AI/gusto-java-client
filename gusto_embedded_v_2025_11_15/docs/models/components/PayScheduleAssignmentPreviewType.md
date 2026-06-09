@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PayScheduleAssignmentPreviewType;
+import com.gusto.embedded_api.models.components.PayScheduleAssignmentPreviewType;
 
 PayScheduleAssignmentPreviewType value = PayScheduleAssignmentPreviewType.SINGLE;
 ```

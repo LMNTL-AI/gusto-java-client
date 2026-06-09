@@ -9,7 +9,7 @@ Explanation for why the company is suspending their account.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.Reason;
+import com.gusto.embedded_api.models.operations.Reason;
 
 Reason value = Reason.SWITCHING_PROVIDER;
 ```

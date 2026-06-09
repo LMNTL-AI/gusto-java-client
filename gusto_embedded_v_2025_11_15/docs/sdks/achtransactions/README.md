@@ -18,10 +18,10 @@ scope: `ach_transactions:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetAchTransactionsRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetAchTransactionsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetAchTransactionsRequest;
+import com.gusto.embedded_api.models.operations.GetAchTransactionsResponse;
 import java.lang.Exception;
 
 public class Application {

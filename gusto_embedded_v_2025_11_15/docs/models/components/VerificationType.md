@@ -8,7 +8,7 @@ The verification type of the bank account.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.VerificationType;
+import com.gusto.embedded_api.models.components.VerificationType;
 
 VerificationType value = VerificationType.BANK_DEPOSITS;
 ```

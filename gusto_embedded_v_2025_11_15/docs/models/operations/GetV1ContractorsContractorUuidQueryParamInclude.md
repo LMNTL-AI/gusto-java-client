@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1ContractorsContractorUuidQueryParamInclude;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidQueryParamInclude;
 
 GetV1ContractorsContractorUuidQueryParamInclude value = GetV1ContractorsContractorUuidQueryParamInclude.COMPANY_NAME;
 ```

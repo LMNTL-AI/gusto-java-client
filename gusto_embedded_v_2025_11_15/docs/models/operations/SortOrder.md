@@ -5,7 +5,7 @@ A string indicating whether to sort resulting events in ascending (asc) or desce
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.SortOrder;
+import com.gusto.embedded_api.models.operations.SortOrder;
 
 SortOrder value = SortOrder.ASC;
 ```

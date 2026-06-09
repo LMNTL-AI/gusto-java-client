@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.Include;
+import com.gusto.embedded_api.models.operations.Include;
 
 Include value = Include.ALL_COMPENSATIONS;
 ```

@@ -22,10 +22,10 @@ scope: `company_payment_configs:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompanyPaymentConfigsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1CompanyPaymentConfigsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1CompanyPaymentConfigsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1CompanyPaymentConfigsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -84,12 +84,12 @@ scope: `company_payment_configs:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.PaymentConfigsUpdateRequest;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1CompanyPaymentConfigsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1CompanyPaymentConfigsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.PaymentConfigsUpdateRequest;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutV1CompanyPaymentConfigsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutV1CompanyPaymentConfigsResponse;
 import java.lang.Exception;
 
 public class Application {

@@ -9,7 +9,7 @@ The current status of the state tax setup.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.SetupStatus;
+import com.gusto.embedded_api.models.components.SetupStatus;
 
 SetupStatus value = SetupStatus.NOT_STARTED;
 ```

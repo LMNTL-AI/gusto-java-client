@@ -2,9 +2,9 @@
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1TokenInfoResponse;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.XGustoAPIVersion;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetV1TokenInfoResponse;
+import com.gusto.embedded_api.models.operations.XGustoAPIVersion;
 import java.lang.Exception;
 
 public class Application {

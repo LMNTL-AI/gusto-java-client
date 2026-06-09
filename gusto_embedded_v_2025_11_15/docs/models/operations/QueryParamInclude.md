@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.QueryParamInclude;
+import com.gusto.embedded_api.models.operations.QueryParamInclude;
 
 QueryParamInclude value = QueryParamInclude.ALL_COMPENSATIONS;
 ```

@@ -19,10 +19,10 @@ scope: `information_requests:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetInformationRequestsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetInformationRequestsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetInformationRequestsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetInformationRequestsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -79,10 +79,10 @@ scope: `information_requests:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.SubmitInformationRequestRequestBody;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.SubmitInformationRequestResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.SubmitInformationRequestRequestBody;
+import com.gusto.embedded_api.models.operations.SubmitInformationRequestResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -111,10 +111,10 @@ public class Application {
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.SubmitInformationRequestRequestBody;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.SubmitInformationRequestResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.SubmitInformationRequestRequestBody;
+import com.gusto.embedded_api.models.operations.SubmitInformationRequestResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -143,10 +143,10 @@ public class Application {
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.SubmitInformationRequestRequestBody;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.SubmitInformationRequestResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.SubmitInformationRequestRequestBody;
+import com.gusto.embedded_api.models.operations.SubmitInformationRequestResponse;
 import java.lang.Exception;
 
 public class Application {

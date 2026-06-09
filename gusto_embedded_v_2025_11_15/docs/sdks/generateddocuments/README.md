@@ -18,11 +18,11 @@ scope: `generated_documents:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.VersionHeader;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DocumentType;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1GeneratedDocumentsDocumentTypeRequestUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.VersionHeader;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.DocumentType;
+import com.gusto.embedded_api.models.operations.GetV1GeneratedDocumentsDocumentTypeRequestUuidResponse;
 import java.lang.Exception;
 
 public class Application {

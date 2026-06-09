@@ -5,7 +5,7 @@ The status of the time off request.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.EmbeddedTimeOffRequestStatus;
+import com.gusto.embedded_api.models.components.EmbeddedTimeOffRequestStatus;
 
 EmbeddedTimeOffRequestStatus value = EmbeddedTimeOffRequestStatus.PENDING;
 ```

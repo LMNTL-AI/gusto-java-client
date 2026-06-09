@@ -5,7 +5,7 @@ The status of this batch item.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PeopleBatchResultsResultsStatus;
+import com.gusto.embedded_api.models.components.PeopleBatchResultsResultsStatus;
 
 PeopleBatchResultsResultsStatus value = PeopleBatchResultsResultsStatus.SUCCESS;
 ```

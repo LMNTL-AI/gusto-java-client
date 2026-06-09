@@ -9,7 +9,7 @@ The competitor the company is switching to. Required if `reason` is `'switching_
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.LeavingFor;
+import com.gusto.embedded_api.models.operations.LeavingFor;
 
 LeavingFor value = LeavingFor.ACCOUNTANT;
 ```

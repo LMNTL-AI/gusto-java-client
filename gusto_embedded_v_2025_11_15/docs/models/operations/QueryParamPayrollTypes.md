@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.QueryParamPayrollTypes;
+import com.gusto.embedded_api.models.operations.QueryParamPayrollTypes;
 
 QueryParamPayrollTypes value = QueryParamPayrollTypes.REGULAR;
 ```

@@ -5,7 +5,7 @@ Type of the time off policy. Only "vacation" and "sick" can be created through t
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PolicyType;
+import com.gusto.embedded_api.models.components.PolicyType;
 
 PolicyType value = PolicyType.VACATION;
 ```

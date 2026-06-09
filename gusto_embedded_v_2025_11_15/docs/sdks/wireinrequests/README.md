@@ -20,10 +20,10 @@ scope: `payrolls:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetWireInRequestsWireInRequestUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetWireInRequestsWireInRequestUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetWireInRequestsWireInRequestUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetWireInRequestsWireInRequestUuidResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -76,12 +76,12 @@ scope: `payrolls:run`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.WireInRequestUpdateRequestBody;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutWireInRequestsWireInRequestUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutWireInRequestsWireInRequestUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.WireInRequestUpdateRequestBody;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutWireInRequestsWireInRequestUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutWireInRequestsWireInRequestUuidResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -142,9 +142,9 @@ scope: `payrolls:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetCompaniesCompanyUuidWireInRequestUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetCompaniesCompanyUuidWireInRequestUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetCompaniesCompanyUuidWireInRequestUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetCompaniesCompanyUuidWireInRequestUuidResponse;
 import java.lang.Exception;
 
 public class Application {

@@ -8,7 +8,7 @@ The category of a company attachment.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.CompanyAttachmentCreateRequestBodyCategory;
+import com.gusto.embedded_api.models.components.CompanyAttachmentCreateRequestBodyCategory;
 
 CompanyAttachmentCreateRequestBodyCategory value = CompanyAttachmentCreateRequestBodyCategory.GEP_NOTICE;
 ```

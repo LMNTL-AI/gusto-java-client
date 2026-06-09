@@ -5,7 +5,7 @@ One of the "onboarding_status" enum values.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.ContractorOnboardingStatus1;
+import com.gusto.embedded_api.models.components.ContractorOnboardingStatus1;
 
 ContractorOnboardingStatus1 value = ContractorOnboardingStatus1.ADMIN_ONBOARDING_INCOMPLETE;
 ```

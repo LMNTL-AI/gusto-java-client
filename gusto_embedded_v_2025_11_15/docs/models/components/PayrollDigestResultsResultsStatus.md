@@ -5,7 +5,7 @@ The status of this company's digest computation.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PayrollDigestResultsResultsStatus;
+import com.gusto.embedded_api.models.components.PayrollDigestResultsResultsStatus;
 
 PayrollDigestResultsResultsStatus value = PayrollDigestResultsResultsStatus.SUCCESS;
 ```

@@ -6,7 +6,7 @@ Available options:
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1EmployeesEmployeeIdEmployeeBenefitsQueryParamInclude;
+import com.gusto.embedded_api.models.operations.GetV1EmployeesEmployeeIdEmployeeBenefitsQueryParamInclude;
 
 GetV1EmployeesEmployeeIdEmployeeBenefitsQueryParamInclude value = GetV1EmployeesEmployeeIdEmployeeBenefitsQueryParamInclude.ALL_BENEFITS;
 ```

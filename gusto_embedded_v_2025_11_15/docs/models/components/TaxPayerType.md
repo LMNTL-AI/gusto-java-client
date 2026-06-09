@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.TaxPayerType;
+import com.gusto.embedded_api.models.components.TaxPayerType;
 
 TaxPayerType value = TaxPayerType.C_CORPORATION;
 ```

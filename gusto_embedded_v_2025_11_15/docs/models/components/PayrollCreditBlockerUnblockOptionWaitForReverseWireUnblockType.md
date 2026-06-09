@@ -5,7 +5,7 @@ The type of unblock option for the credit blocker
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PayrollCreditBlockerUnblockOptionWaitForReverseWireUnblockType;
+import com.gusto.embedded_api.models.components.PayrollCreditBlockerUnblockOptionWaitForReverseWireUnblockType;
 
 PayrollCreditBlockerUnblockOptionWaitForReverseWireUnblockType value = PayrollCreditBlockerUnblockOptionWaitForReverseWireUnblockType.WAIT_FOR_REVERSE_WIRE;
 ```

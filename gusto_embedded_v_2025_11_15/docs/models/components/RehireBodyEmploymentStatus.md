@@ -5,7 +5,7 @@ The employee's employment status. Supplying an invalid option will set the emplo
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.RehireBodyEmploymentStatus;
+import com.gusto.embedded_api.models.components.RehireBodyEmploymentStatus;
 
 RehireBodyEmploymentStatus value = RehireBodyEmploymentStatus.PART_TIME;
 ```

@@ -5,7 +5,7 @@ The source of the company benefit. This can be "internal", "external", or "partn
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.Source;
+import com.gusto.embedded_api.models.components.Source;
 
 Source value = Source.INTERNAL;
 ```

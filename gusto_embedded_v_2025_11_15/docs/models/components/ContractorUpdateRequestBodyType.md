@@ -5,7 +5,7 @@ The contractor type.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.ContractorUpdateRequestBodyType;
+import com.gusto.embedded_api.models.components.ContractorUpdateRequestBodyType;
 
 ContractorUpdateRequestBodyType value = ContractorUpdateRequestBodyType.INDIVIDUAL;
 ```

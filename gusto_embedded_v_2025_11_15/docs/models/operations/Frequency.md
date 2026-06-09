@@ -5,7 +5,7 @@ The frequency that employees on this pay schedule are paid with Gusto.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.Frequency;
+import com.gusto.embedded_api.models.operations.Frequency;
 
 Frequency value = Frequency.EVERY_WEEK;
 ```

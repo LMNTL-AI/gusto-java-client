@@ -20,10 +20,10 @@ scope: `contractor_payment_methods:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1ContractorsContractorUuidBankAccountsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1ContractorsContractorUuidBankAccountsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidBankAccountsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidBankAccountsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -78,10 +78,10 @@ scope: `contractor_payment_methods:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1ContractorsContractorUuidPaymentMethodHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1ContractorsContractorUuidPaymentMethodResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidPaymentMethodHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidPaymentMethodResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -135,9 +135,9 @@ scope: `contractor_payment_methods:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.*;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.*;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 
 public class Application {

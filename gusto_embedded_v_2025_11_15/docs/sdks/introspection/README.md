@@ -19,9 +19,9 @@ Returns scope and resource information associated with the current access token.
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1TokenInfoResponse;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.XGustoAPIVersion;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetV1TokenInfoResponse;
+import com.gusto.embedded_api.models.operations.XGustoAPIVersion;
 import java.lang.Exception;
 
 public class Application {
@@ -69,9 +69,9 @@ Creates a system access token or refreshes an oauth access token
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.*;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.*;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.lang.Object;
 

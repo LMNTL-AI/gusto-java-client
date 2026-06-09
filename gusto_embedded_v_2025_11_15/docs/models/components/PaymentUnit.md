@@ -5,7 +5,7 @@ The unit accompanying the compensation rate. If the employee is an owner, rate s
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PaymentUnit;
+import com.gusto.embedded_api.models.components.PaymentUnit;
 
 PaymentUnit value = PaymentUnit.HOUR;
 ```

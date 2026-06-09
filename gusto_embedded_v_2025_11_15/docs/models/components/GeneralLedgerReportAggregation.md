@@ -5,7 +5,7 @@ The breakdown level used for the report.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.GeneralLedgerReportAggregation;
+import com.gusto.embedded_api.models.components.GeneralLedgerReportAggregation;
 
 GeneralLedgerReportAggregation value = GeneralLedgerReportAggregation.DEFAULT;
 ```

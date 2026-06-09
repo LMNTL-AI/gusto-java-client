@@ -5,7 +5,7 @@ The payment method type. If type is Check, split_by and splits do not need to be
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.Type;
+import com.gusto.embedded_api.models.operations.Type;
 
 Type value = Type.CHECK;
 ```

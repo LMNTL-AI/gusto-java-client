@@ -7,7 +7,7 @@ Available options:
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetV1JobsJobIdCompensationsQueryParamInclude;
+import com.gusto.embedded_api.models.operations.GetV1JobsJobIdCompensationsQueryParamInclude;
 
 GetV1JobsJobIdCompensationsQueryParamInclude value = GetV1JobsJobIdCompensationsQueryParamInclude.ALL_COMPENSATIONS;
 ```

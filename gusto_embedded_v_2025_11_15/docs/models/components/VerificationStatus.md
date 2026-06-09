@@ -9,7 +9,7 @@ The verification status of the bank account.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.VerificationStatus;
+import com.gusto.embedded_api.models.components.VerificationStatus;
 
 VerificationStatus value = VerificationStatus.AWAITING_DEPOSITS;
 ```

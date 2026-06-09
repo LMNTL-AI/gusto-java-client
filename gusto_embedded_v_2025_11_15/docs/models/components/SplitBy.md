@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.SplitBy;
+import com.gusto.embedded_api.models.components.SplitBy;
 
 SplitBy value = SplitBy.AMOUNT;
 ```

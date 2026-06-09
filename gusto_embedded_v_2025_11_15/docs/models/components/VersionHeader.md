@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.VersionHeader;
+import com.gusto.embedded_api.models.components.VersionHeader;
 
 VersionHeader value = VersionHeader.TWO_THOUSAND_AND_TWENTY_FIVE_MINUS11_MINUS15;
 ```

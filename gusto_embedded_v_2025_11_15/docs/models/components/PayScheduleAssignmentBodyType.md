@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PayScheduleAssignmentBodyType;
+import com.gusto.embedded_api.models.components.PayScheduleAssignmentBodyType;
 
 PayScheduleAssignmentBodyType value = PayScheduleAssignmentBodyType.SINGLE;
 ```

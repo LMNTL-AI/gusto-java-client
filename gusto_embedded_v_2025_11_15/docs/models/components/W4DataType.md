@@ -5,7 +5,7 @@ The version of w4 form.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.W4DataType;
+import com.gusto.embedded_api.models.components.W4DataType;
 
 W4DataType value = W4DataType.PRE2020_W4;
 ```

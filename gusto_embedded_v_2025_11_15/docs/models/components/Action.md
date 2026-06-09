@@ -5,7 +5,7 @@ The action to perform on the employee benefit. Required for creating/updating an
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.Action;
+import com.gusto.embedded_api.models.components.Action;
 
 Action value = Action.CREATE;
 ```

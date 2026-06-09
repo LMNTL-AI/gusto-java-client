@@ -5,7 +5,7 @@ The type of response to the question
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.ResponseType;
+import com.gusto.embedded_api.models.components.ResponseType;
 
 ResponseType value = ResponseType.TEXT;
 ```

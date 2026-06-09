@@ -19,10 +19,10 @@ scope: `recovery_cases:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetRecoveryCasesHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetRecoveryCasesResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetRecoveryCasesHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetRecoveryCasesResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -81,11 +81,11 @@ scope: `recovery_cases:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.RedebitRecoveryCaseHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.RedebitRecoveryCaseResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.RedebitRecoveryCaseHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.RedebitRecoveryCaseResponse;
 import java.lang.Exception;
 
 public class Application {

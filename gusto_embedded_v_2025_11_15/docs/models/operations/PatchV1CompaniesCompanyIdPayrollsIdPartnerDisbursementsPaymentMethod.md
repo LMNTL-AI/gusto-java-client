@@ -5,7 +5,7 @@ Payment method for the employee
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PatchV1CompaniesCompanyIdPayrollsIdPartnerDisbursementsPaymentMethod;
+import com.gusto.embedded_api.models.operations.PatchV1CompaniesCompanyIdPayrollsIdPartnerDisbursementsPaymentMethod;
 
 PatchV1CompaniesCompanyIdPayrollsIdPartnerDisbursementsPaymentMethod value = PatchV1CompaniesCompanyIdPayrollsIdPartnerDisbursementsPaymentMethod.DIRECT_DEPOSIT;
 ```

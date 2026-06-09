@@ -5,7 +5,7 @@ The payment method type. If type is Direct Deposit, the contractor is required t
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutV1ContractorsContractorIdPaymentMethodType;
+import com.gusto.embedded_api.models.operations.PutV1ContractorsContractorIdPaymentMethodType;
 
 PutV1ContractorsContractorIdPaymentMethodType value = PutV1ContractorsContractorIdPaymentMethodType.DIRECT_DEPOSIT;
 ```

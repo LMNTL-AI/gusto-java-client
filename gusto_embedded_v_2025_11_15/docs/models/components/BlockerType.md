@@ -5,7 +5,7 @@ The type of blocker
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.BlockerType;
+import com.gusto.embedded_api.models.components.BlockerType;
 
 BlockerType value = BlockerType.MINIMUM_DAYS;
 ```

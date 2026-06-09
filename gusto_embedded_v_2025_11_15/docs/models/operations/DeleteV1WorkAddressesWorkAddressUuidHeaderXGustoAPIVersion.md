@@ -5,7 +5,7 @@ Determines the date-based API version associated with your API call. If none is 
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteV1WorkAddressesWorkAddressUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.DeleteV1WorkAddressesWorkAddressUuidHeaderXGustoAPIVersion;
 
 DeleteV1WorkAddressesWorkAddressUuidHeaderXGustoAPIVersion value = DeleteV1WorkAddressesWorkAddressUuidHeaderXGustoAPIVersion.TWO_THOUSAND_AND_TWENTY_FIVE_MINUS11_MINUS15;
 ```

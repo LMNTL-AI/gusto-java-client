@@ -5,7 +5,7 @@ The lifecycle status of the batch request itself. Terminal values are `completed
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.PayrollDigestStatus;
+import com.gusto.embedded_api.models.components.PayrollDigestStatus;
 
 PayrollDigestStatus value = PayrollDigestStatus.PENDING;
 ```

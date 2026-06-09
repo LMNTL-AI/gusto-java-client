@@ -5,7 +5,7 @@ Employee employment type to filter by
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.EmploymentType;
+import com.gusto.embedded_api.models.components.EmploymentType;
 
 EmploymentType value = EmploymentType.EXEMPT;
 ```

@@ -5,7 +5,7 @@ The payment method.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.ContractorPaymentForGroupPaymentMethod;
+import com.gusto.embedded_api.models.components.ContractorPaymentForGroupPaymentMethod;
 
 ContractorPaymentForGroupPaymentMethod value = ContractorPaymentForGroupPaymentMethod.DIRECT_DEPOSIT;
 ```

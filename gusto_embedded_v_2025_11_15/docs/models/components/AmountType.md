@@ -5,7 +5,7 @@ The amount type of the deduction for the pay period. Only present for unprocesse
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.AmountType;
+import com.gusto.embedded_api.models.components.AmountType;
 
 AmountType value = AmountType.FIXED;
 ```

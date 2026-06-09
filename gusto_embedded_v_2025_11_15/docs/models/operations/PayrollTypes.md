@@ -5,7 +5,7 @@ Comma-separated list of payroll types to include (regular, transition). Defaults
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PayrollTypes;
+import com.gusto.embedded_api.models.operations.PayrollTypes;
 
 PayrollTypes value = PayrollTypes.REGULAR;
 ```

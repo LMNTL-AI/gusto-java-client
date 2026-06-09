@@ -24,10 +24,10 @@ scope: `departments:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetCompaniesDepartmentsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetCompaniesDepartmentsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetCompaniesDepartmentsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetCompaniesDepartmentsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -80,12 +80,12 @@ scope: `departments:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.DepartmentCreateRequestBody;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PostDepartmentsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PostDepartmentsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.DepartmentCreateRequestBody;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PostDepartmentsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PostDepartmentsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -143,10 +143,10 @@ scope: `departments:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetDepartmentHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.GetDepartmentResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetDepartmentHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetDepartmentResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -199,11 +199,11 @@ scope: `departments:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.DepartmentUpdateRequestBody;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.*;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutDepartmentsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutDepartmentsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.DepartmentUpdateRequestBody;
+import com.gusto.embedded_api.models.errors.*;
+import com.gusto.embedded_api.models.operations.PutDepartmentsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutDepartmentsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -263,11 +263,11 @@ scope: `departments:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteDepartmentHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.DeleteDepartmentResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.DeleteDepartmentHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.DeleteDepartmentResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -319,12 +319,12 @@ scope: `departments:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.DepartmentPeopleRequestBody;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutAddPeopleToDepartmentHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutAddPeopleToDepartmentResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.DepartmentPeopleRequestBody;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutAddPeopleToDepartmentHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutAddPeopleToDepartmentResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -382,12 +382,12 @@ scope: `departments:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2025_11_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2025_11_15.models.components.DepartmentPeopleRequestBody;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2025_11_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutRemovePeopleFromDepartmentHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2025_11_15.models.operations.PutRemovePeopleFromDepartmentResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.DepartmentPeopleRequestBody;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutRemovePeopleFromDepartmentHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutRemovePeopleFromDepartmentResponse;
 import java.lang.Exception;
 
 public class Application {

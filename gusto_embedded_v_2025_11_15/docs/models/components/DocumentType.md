@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2025_11_15.models.components.DocumentType;
+import com.gusto.embedded_api.models.components.DocumentType;
 
 DocumentType value = DocumentType.USCIS_ALIEN_REGISTRATION_NUMBER;
 ```
