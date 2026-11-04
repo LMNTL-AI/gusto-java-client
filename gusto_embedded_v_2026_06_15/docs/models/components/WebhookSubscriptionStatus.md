@@ -5,7 +5,7 @@ The status of the webhook subscription.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2026_06_15.models.components.WebhookSubscriptionStatus;
+import com.gusto.embedded_api.models.components.WebhookSubscriptionStatus;
 
 WebhookSubscriptionStatus value = WebhookSubscriptionStatus.PENDING;
 ```

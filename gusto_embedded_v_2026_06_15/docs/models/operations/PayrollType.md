@@ -5,7 +5,7 @@ Payroll type
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PayrollType;
+import com.gusto.embedded_api.models.operations.PayrollType;
 
 PayrollType value = PayrollType.REGULAR;
 ```

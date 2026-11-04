@@ -31,10 +31,10 @@ scope: `contractors:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1ContractorsContractorUuidAddressHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1ContractorsContractorUuidAddressResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidAddressHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidAddressResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -91,12 +91,12 @@ scope: `contractors:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.components.ContractorAddressUpdateBody;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PutV1ContractorsContractorUuidAddressHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PutV1ContractorsContractorUuidAddressResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.ContractorAddressUpdateBody;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutV1ContractorsContractorUuidAddressHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutV1ContractorsContractorUuidAddressResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -178,10 +178,10 @@ scope: `contractor_payment_methods:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1CompaniesCompanyIdContractorsPaymentDetailsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1CompaniesCompanyIdContractorsPaymentDetailsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyIdContractorsPaymentDetailsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyIdContractorsPaymentDetailsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -245,8 +245,8 @@ scope: `contractors:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.time.LocalDate;
 
@@ -310,9 +310,9 @@ scope: `contractors:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.DeleteV1ContractorsContractorUuidRehireHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.DeleteV1ContractorsContractorUuidRehireResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.DeleteV1ContractorsContractorUuidRehireHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.DeleteV1ContractorsContractorUuidRehireResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -371,8 +371,8 @@ scope: `contractors:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 import java.time.LocalDate;
 
@@ -436,9 +436,9 @@ scope: `contractors:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.DeleteV1ContractorsContractorUuidTerminationHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.DeleteV1ContractorsContractorUuidTerminationResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.DeleteV1ContractorsContractorUuidTerminationHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.DeleteV1ContractorsContractorUuidTerminationResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -488,10 +488,10 @@ scope: `contractors:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1ContractorsContractorUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1ContractorsContractorUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -549,12 +549,12 @@ scope: `contractors:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.components.ContractorUpdateRequestBody;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PutV1ContractorsContractorUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PutV1ContractorsContractorUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.ContractorUpdateRequestBody;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutV1ContractorsContractorUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutV1ContractorsContractorUuidResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -614,11 +614,11 @@ scope: `contractors:manage`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.DeleteV1ContractorsContractorUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.DeleteV1ContractorsContractorUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.DeleteV1ContractorsContractorUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.DeleteV1ContractorsContractorUuidResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -670,10 +670,10 @@ scope: `contractors:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1CompaniesCompanyUuidContractorsRequest;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1CompaniesCompanyUuidContractorsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyUuidContractorsRequest;
+import com.gusto.embedded_api.models.operations.GetV1CompaniesCompanyUuidContractorsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -729,13 +729,13 @@ scope: `contractors:manage`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.components.ContractorCreateRequestBody;
-import com.gusto.embedded_api_v_2026_06_15.models.components.ContractorCreateRequestBodyWageType;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PostV1CompaniesCompanyUuidContractorsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PostV1CompaniesCompanyUuidContractorsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.ContractorCreateRequestBody;
+import com.gusto.embedded_api.models.components.ContractorCreateRequestBodyWageType;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PostV1CompaniesCompanyUuidContractorsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PostV1CompaniesCompanyUuidContractorsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -826,10 +826,10 @@ scope: `contractors:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1ContractorsContractorUuidOnboardingStatusHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1ContractorsContractorUuidOnboardingStatusResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidOnboardingStatusHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1ContractorsContractorUuidOnboardingStatusResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -892,13 +892,13 @@ scope: `contractors:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.components.ContractorOnboardingStatusUpdateRequestBody;
-import com.gusto.embedded_api_v_2026_06_15.models.components.ContractorOnboardingStatusUpdateRequestBodyOnboardingStatus;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PutV1ContractorsContractorUuidOnboardingStatusHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PutV1ContractorsContractorUuidOnboardingStatusResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.ContractorOnboardingStatusUpdateRequestBody;
+import com.gusto.embedded_api.models.components.ContractorOnboardingStatusUpdateRequestBodyOnboardingStatus;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutV1ContractorsContractorUuidOnboardingStatusHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutV1ContractorsContractorUuidOnboardingStatusResponse;
 import java.lang.Exception;
 
 public class Application {

@@ -26,10 +26,10 @@ scope: `company_reports:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.*;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.*;
 import java.lang.Exception;
 
 public class Application {
@@ -88,12 +88,12 @@ scope: `company_reports:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.components.*;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PostCompaniesCompanyUuidReportsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PostCompaniesCompanyUuidReportsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.*;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PostCompaniesCompanyUuidReportsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PostCompaniesCompanyUuidReportsResponse;
 import java.lang.Exception;
 import java.time.LocalDate;
 import java.util.List;
@@ -162,13 +162,13 @@ scope: `company_reports:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.components.Aggregation;
-import com.gusto.embedded_api_v_2026_06_15.models.components.GeneralLedgerReportBody;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PostPayrollsPayrollUuidReportsGeneralLedgerHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PostPayrollsPayrollUuidReportsGeneralLedgerResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.Aggregation;
+import com.gusto.embedded_api.models.components.GeneralLedgerReportBody;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PostPayrollsPayrollUuidReportsGeneralLedgerHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PostPayrollsPayrollUuidReportsGeneralLedgerResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -228,10 +228,10 @@ scope: `company_reports:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetReportsRequestUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetReportsRequestUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetReportsRequestUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetReportsRequestUuidResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -284,11 +284,11 @@ scope: `company_reports:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetCompaniesCompanyUuidReportTemplatesReportTypeHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetCompaniesCompanyUuidReportTemplatesReportTypeResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.GetCompaniesCompanyUuidReportTemplatesReportTypeHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetCompaniesCompanyUuidReportTemplatesReportTypeResponse;
 import java.lang.Exception;
 
 public class Application {

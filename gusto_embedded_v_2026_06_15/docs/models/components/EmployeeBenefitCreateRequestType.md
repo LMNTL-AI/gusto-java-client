@@ -11,7 +11,7 @@ The company contribution scheme.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2026_06_15.models.components.EmployeeBenefitCreateRequestType;
+import com.gusto.embedded_api.models.components.EmployeeBenefitCreateRequestType;
 
 EmployeeBenefitCreateRequestType value = EmployeeBenefitCreateRequestType.TIERED;
 ```

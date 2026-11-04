@@ -5,7 +5,7 @@ The type of recipient associated with the document (will be `Contractor` for Con
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2026_06_15.models.components.DocumentRecipientType;
+import com.gusto.embedded_api.models.components.DocumentRecipientType;
 
 DocumentRecipientType value = DocumentRecipientType.COMPANY;
 ```

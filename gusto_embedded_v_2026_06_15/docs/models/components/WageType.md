@@ -5,7 +5,7 @@ The wage type for the payment.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2026_06_15.models.components.WageType;
+import com.gusto.embedded_api.models.components.WageType;
 
 WageType value = WageType.HOURLY;
 ```

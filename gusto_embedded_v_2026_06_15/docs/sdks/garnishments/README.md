@@ -22,10 +22,10 @@ scope: `garnishments:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1EmployeesEmployeeIdGarnishmentsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1EmployeesEmployeeIdGarnishmentsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1EmployeesEmployeeIdGarnishmentsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1EmployeesEmployeeIdGarnishmentsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -80,12 +80,12 @@ scope: `garnishments:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.components.GarnishmentRequest;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PostV1EmployeesEmployeeIdGarnishmentsHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PostV1EmployeesEmployeeIdGarnishmentsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.GarnishmentRequest;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PostV1EmployeesEmployeeIdGarnishmentsHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PostV1EmployeesEmployeeIdGarnishmentsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -144,9 +144,9 @@ scope: `garnishments:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1GarnishmentsChildSupportHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1GarnishmentsChildSupportResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetV1GarnishmentsChildSupportHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1GarnishmentsChildSupportResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -196,10 +196,10 @@ scope: `garnishments:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1GarnishmentsGarnishmentIdHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetV1GarnishmentsGarnishmentIdResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.operations.GetV1GarnishmentsGarnishmentIdHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetV1GarnishmentsGarnishmentIdResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -252,12 +252,12 @@ scope: `garnishments:write`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.components.UpdateGarnishmentRequest;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PutV1GarnishmentsGarnishmentIdHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.PutV1GarnishmentsGarnishmentIdResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.components.UpdateGarnishmentRequest;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.PutV1GarnishmentsGarnishmentIdHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.PutV1GarnishmentsGarnishmentIdResponse;
 import java.lang.Exception;
 
 public class Application {

@@ -19,9 +19,9 @@ scope: `notifications:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetCompanyNotificationsRequest;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetCompanyNotificationsResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.operations.GetCompanyNotificationsRequest;
+import com.gusto.embedded_api.models.operations.GetCompanyNotificationsResponse;
 import java.lang.Exception;
 
 public class Application {
@@ -79,11 +79,11 @@ scope: `notifications:read`
 ```java
 package hello.world;
 
-import com.gusto.embedded_api_v_2026_06_15.GustoEmbedded;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.NotFoundErrorObject;
-import com.gusto.embedded_api_v_2026_06_15.models.errors.UnprocessableEntityError;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetNotificationsNotificationUuidHeaderXGustoAPIVersion;
-import com.gusto.embedded_api_v_2026_06_15.models.operations.GetNotificationsNotificationUuidResponse;
+import com.gusto.embedded_api.GustoEmbedded;
+import com.gusto.embedded_api.models.errors.NotFoundErrorObject;
+import com.gusto.embedded_api.models.errors.UnprocessableEntityError;
+import com.gusto.embedded_api.models.operations.GetNotificationsNotificationUuidHeaderXGustoAPIVersion;
+import com.gusto.embedded_api.models.operations.GetNotificationsNotificationUuidResponse;
 import java.lang.Exception;
 
 public class Application {

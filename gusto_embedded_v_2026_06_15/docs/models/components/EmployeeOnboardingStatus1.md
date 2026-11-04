@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2026_06_15.models.components.EmployeeOnboardingStatus1;
+import com.gusto.embedded_api.models.components.EmployeeOnboardingStatus1;
 
 EmployeeOnboardingStatus1 value = EmployeeOnboardingStatus1.ONBOARDING_COMPLETED;
 ```

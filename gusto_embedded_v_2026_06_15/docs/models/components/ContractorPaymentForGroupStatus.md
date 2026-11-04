@@ -5,7 +5,7 @@ The status of the contractor payment.  Will transition to `Funded` during paymen
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2026_06_15.models.components.ContractorPaymentForGroupStatus;
+import com.gusto.embedded_api.models.components.ContractorPaymentForGroupStatus;
 
 ContractorPaymentForGroupStatus value = ContractorPaymentForGroupStatus.FUNDED;
 ```
