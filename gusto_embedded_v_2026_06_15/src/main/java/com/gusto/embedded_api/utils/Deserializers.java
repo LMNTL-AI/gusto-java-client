@@ -32,6 +32,9 @@ public final class Deserializers {
     
     public static final Module STRICT_DESERIALIZERS = createStrictDeserializersModule();
 
+    // LMNTL patch (#3266): a plain decimal number written as a JSON string, e.g. "-12.34".
+    private static final java.util.regex.Pattern DECIMAL_STRING = java.util.regex.Pattern.compile("-?\\d+(\\.\\d+)?");
+
     private static Module createStrictDeserializersModule() {
         SimpleModule m = new SimpleModule();
         m.addDeserializer(Boolean.class, Deserializers.BOOLEAN_STRICT);
@@ -84,6 +87,10 @@ public final class Deserializers {
                 return p.getDoubleValue();
             } else if (t == JsonToken.VALUE_NUMBER_FLOAT) {
                 return p.getDoubleValue();
+            } else if (t == JsonToken.VALUE_STRING && DECIMAL_STRING.matcher(p.getText().trim()).matches()) {
+                // LMNTL patch (#3266): Gusto's 2026-06-15 API sends some money fields as decimal strings
+                // ("12.34") while the generated model still types them Double; accept both shapes.
+                return Double.valueOf(p.getText().trim());
             } else {
                 return (Double) ctxt.handleUnexpectedToken(Double.class, p);
             }
@@ -106,6 +113,10 @@ public final class Deserializers {
                 return p.getFloatValue();
             } else if (t == JsonToken.VALUE_NUMBER_FLOAT) {
                 return p.getFloatValue();
+            } else if (t == JsonToken.VALUE_STRING && DECIMAL_STRING.matcher(p.getText().trim()).matches()) {
+                // LMNTL patch (#3266): Gusto's 2026-06-15 API sends some money fields as decimal strings
+                // ("12.34") while the generated model still types them Float; accept both shapes.
+                return Float.valueOf(p.getText().trim());
             } else {
                 return (Float) ctxt.handleUnexpectedToken(Float.class, p);
             }
