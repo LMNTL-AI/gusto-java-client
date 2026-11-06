@@ -6,7 +6,7 @@ Available options:
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2026_06_15.models.operations.Include;
+import com.gusto.embedded_api.models.operations.Include;
 
 Include value = Include.ALL_BENEFITS;
 ```

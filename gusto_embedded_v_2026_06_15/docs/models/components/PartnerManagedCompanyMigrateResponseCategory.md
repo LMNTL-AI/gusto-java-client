@@ -5,7 +5,7 @@ Returns `migration_blocker` for blockers.
 ## Example Usage
 
 ```java
-import com.gusto.embedded_api_v_2026_06_15.models.components.PartnerManagedCompanyMigrateResponseCategory;
+import com.gusto.embedded_api.models.components.PartnerManagedCompanyMigrateResponseCategory;
 
 PartnerManagedCompanyMigrateResponseCategory value = PartnerManagedCompanyMigrateResponseCategory.MIGRATION_BLOCKER;
 ```
